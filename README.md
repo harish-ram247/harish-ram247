@@ -1,100 +1,94 @@
+<!-- ⚠️ This file is auto-generated. Edit config/profile.json and run `npm run generate` to update. -->
 <!--
-  ╔══════════════════════════════════════════════════════════════════════════╗
-  ║   harish@github — developer control center                               ║
-  ║   Powered by AI · Cloud · Industrial IoT                                 ║
-  ║   Built for GitHub rendering. No CSS, no JS. Pure SVG + Markdown.        ║
-  ╚══════════════════════════════════════════════════════════════════════════╝
+  Harish Ram S · GitHub Profile
+  Config-driven premium developer profile.
+  Source of truth: config/profile.json
 -->
 
 <div align="center">
-<img src="assets/hero.svg" width="100%" alt="Harish Ram — Developer Hero" />
+<img src="svg/hero.svg" width="100%" alt="Harish Ram S — Computer Science Engineering  ·  Pre-final Year" />
 </div>
+
+<div align="center">
+<img src="svg/connector.svg" width="100%" alt="" />
+</div>
+
+<div align="center">
+<img src="svg/stats.svg" width="100%" alt="At a Glance" />
+</div>
+
+<div align="center">
+<img src="svg/connector.svg" width="100%" alt="" />
+</div>
+
+<div align="center">
+
+<!--suppress HtmlUnknownAttribute -->
+<sub><code>FEATURED WORK</code></sub>
+
+</div>
+
+<div align="center">
+<img src="svg/projects/powersense.svg" width="100%" alt="PowerSense" />
+</div>
+
+<div align="center">
+<img src="svg/projects/cybercrime-portal.svg" width="100%" alt="Cybercrime Portal" />
+</div>
+
+<div align="center">
+<img src="svg/projects/portfolio.svg" width="100%" alt="Personal Portfolio" />
+</div>
+
+<div align="center">
+<img src="svg/connector.svg" width="100%" alt="" />
+</div>
+
+<div align="center">
+<img src="svg/tech-stack.svg" width="100%" alt="Tech Stack" />
+</div>
+
+<div align="center">
+<img src="svg/connector.svg" width="100%" alt="" />
+</div>
+
+<div align="center">
+<img src="svg/journey.svg" width="100%" alt="Journey" />
+</div>
+
+<div align="center">
+<img src="svg/connector.svg" width="100%" alt="" />
+</div>
+
+<div align="center">
+
+<sub><code>GITHUB</code></sub>
+
+<br/><br/>
+
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center">
+<img src="https://github-readme-stats.vercel.app/api?username=harish-ram247&show_icons=true&theme=transparent&hide_border=true&title_color=58d6ff&icon_color=a371f7&text_color=8b949e&bg_color=0d1320&ring_color=58d6ff&line_height=28&include_all_commits=true" height="170" alt="GitHub Stats" />
+</td>
+<td align="center">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=harish-ram247&layout=compact&theme=transparent&hide_border=true&title_color=58d6ff&icon_color=a371f7&text_color=8b949e&bg_color=0d1320&ring_color=58d6ff&langs_count=6" height="170" alt="Top Languages" />
+</td>
+</tr>
+</table>
 
 <br/>
 
-<div align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&duration=2000&pause=1500&color=00E5FF&center=true&vCenter=true&width=700&height=22&lines=Building+AI-powered+systems+that+solve+real-world+problems." alt="tagline" />
-</div>
-
----
-
-<div align="center">
-<img src="assets/focus.svg" width="100%" alt="Current Focus" />
-</div>
-
----
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=10&duration=800&pause=800&color=3A6EA8&center=true&vCenter=true&width=300&height=18&lines=FEATURED+PROJECTS" alt="featured projects label" />
+<img src="https://github-readme-streak-stats.herokuapp.com?user=harish-ram247&theme=transparent&hide_border=true&stroke=1c2333&ring=58d6ff&fire=a371f7&currStreakLabel=58d6ff&sideLabels=8b949e&dates=484f58&background=0d1320" height="120" alt="Streak Stats" />
 
 </div>
 
 <div align="center">
-
-| &nbsp; | &nbsp; | &nbsp; |
-|:---:|:---:|:---:|
-| <img src="assets/powersense.svg" width="258" alt="PowerSense" /> | <img src="assets/cybercrime.svg" width="258" alt="Cybercrime Portal" /> | <img src="assets/portfolio.svg" width="258" alt="Portfolio" /> |
-
-</div>
-
----
-
-<div align="center">
-<img src="assets/architecture.svg" width="100%" alt="How I Build" />
-</div>
-
----
-
-<div align="center">
-<img src="assets/techstack.svg" width="100%" alt="Tech Stack" />
-</div>
-
----
-
-<div align="center">
-<img src="assets/journey.svg" width="100%" alt="Journey" />
-</div>
-
----
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=10&duration=800&pause=800&color=3A6EA8&center=true&vCenter=true&width=300&height=18&lines=GITHUB+ANALYTICS" alt="analytics label" />
-
+<img src="svg/connector.svg" width="100%" alt="" />
 </div>
 
 <div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=harish-ram247&show_icons=true&theme=transparent&hide_border=true&title_color=00e5ff&icon_color=7b2fff&text_color=8b949e&bg_color=060c18&ring_color=00e5ff&line_height=28" height="160" alt="GitHub Stats" />
-&nbsp;&nbsp;&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=harish-ram247&layout=compact&theme=transparent&hide_border=true&title_color=00e5ff&text_color=8b949e&bg_color=060c18" height="160" alt="Top Languages" />
-
+<img src="svg/connect.svg" width="100%" alt="Let's Connect" />
 </div>
 
-<div align="center">
-
-<img src="https://github-readme-streak-stats.herokuapp.com?user=harish-ram247&theme=transparent&hide_border=true&stroke=1e3a5f&ring=00e5ff&fire=7b2fff&currStreakLabel=00e5ff&sideLabels=8b949e&dates=484f58&background=060c18" height="120" alt="Streak Stats" />
-
-</div>
-
----
-
-<div align="center">
-<img src="assets/connect.svg" width="100%" alt="Let's Connect" />
-</div>
-
-<br/>
-
-<div align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&pause=500&color=00FF41&center=true&vCenter=true&width=300&height=30&lines=harish%40github%3A~%24+%E2%96%88" alt="terminal cursor" />
-</div>
-
-<!--
-  ╔══════════════════════════════════════════════════════════╗
-  ║  Thanks for exploring. You've reached the end of the     ║
-  ║  filesystem. There's nothing more to see here.           ║
-  ║                                                          ║
-  ║  Or is there?                                            ║
-  ╚══════════════════════════════════════════════════════════╝
--->
+<!-- Generated by scripts/generate-readme.js at 2026-06-25T08:52:51.324Z -->

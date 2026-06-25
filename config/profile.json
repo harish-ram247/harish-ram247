@@ -1,0 +1,155 @@
+{
+  "personal": {
+    "name": "Harish Ram S",
+    "title": "Computer Science Engineering  ·  Pre-final Year",
+    "university": "CIT, Chennai",
+    "bio": "Building at the intersection of AI, distributed systems, and cloud infrastructure. Currently obsessed with agentic AI and Kubernetes.",
+    "mission": "Build things that matter.",
+    "location": "Chennai, India",
+    "timezone": "IST (UTC+5:30)",
+    "availability": "Open to opportunities"
+  },
+  "contact": {
+    "email": "harish@domain.com",
+    "github": "harish-ram247",
+    "linkedin": "harish-ram-s",
+    "portfolio": "",
+    "resume": "",
+    "leetcode": "",
+    "hackerrank": "",
+    "medium": "",
+    "devto": "",
+    "twitter": "",
+    "instagram": "",
+    "youtube": ""
+  },
+  "stats": [
+    { "value": "3", "label": "Major projects shipped" },
+    { "value": "2x", "label": "Industry Internships" },
+    { "value": "🏆", "label": "IEEE Hackathon, IIM Indore" }
+  ],
+  "focus": [
+    {
+      "icon": "⚡",
+      "title": "Currently Building",
+      "description": "PowerSense v2 — real-time industrial energy monitoring with Agentic AI pipelines.",
+      "accent": "cyan"
+    },
+    {
+      "icon": "📐",
+      "title": "Currently Learning",
+      "description": "Kubernetes cluster management · AWS Solutions Architect · System Design.",
+      "accent": "purple"
+    },
+    {
+      "icon": "📖",
+      "title": "Reading",
+      "description": "Designing Data-Intensive Applications — Martin Kleppmann",
+      "accent": "green"
+    },
+    {
+      "icon": "🔍",
+      "title": "Open To",
+      "description": "Internships · Research collaborations · Interesting problems worth solving.",
+      "accent": "gold"
+    }
+  ],
+  "projects": [
+    {
+      "id": "powersense",
+      "name": "PowerSense",
+      "category": "IoT · Monitoring",
+      "description": "Industrial IoT energy monitoring dashboard with real-time sensor pipelines and Grafana visualizations.",
+      "stack": ["React", "Node.js", "Prometheus", "Docker"],
+      "github": "https://github.com/harish-ram247",
+      "demo": "",
+      "status": 85,
+      "theme": "cyan",
+      "architecture": [
+        "ESP32 Sensors",
+        "REST API",
+        "InfluxDB",
+        "Prometheus",
+        "Grafana Dashboard"
+      ]
+    },
+    {
+      "id": "cybercrime-portal",
+      "name": "Cybercrime Portal",
+      "category": "Blockchain · AI",
+      "description": "Decentralized complaint system with AI-assisted case analysis and tamper-proof IPFS storage.",
+      "stack": ["Blockchain", "AI Chatbot", "Node.js", "IPFS"],
+      "github": "https://github.com/harish-ram247",
+      "demo": "",
+      "status": 70,
+      "theme": "purple",
+      "architecture": [
+        "Citizen Portal",
+        "AI Chatbot",
+        "Smart Contracts",
+        "IPFS Storage",
+        "Admin Dashboard"
+      ]
+    },
+    {
+      "id": "portfolio",
+      "name": "Personal Portfolio",
+      "category": "Frontend · Design",
+      "description": "Modern responsive developer portfolio showcasing projects, writing, and contact.",
+      "stack": ["React", "Tailwind CSS", "Vite"],
+      "github": "https://github.com/harish-ram247",
+      "demo": "",
+      "status": 40,
+      "theme": "green",
+      "architecture": []
+    }
+  ],
+  "techStack": {
+    "AI / ML": {
+      "accent": "cyan",
+      "items": ["Python", "LangChain", "Generative AI", "Agentic AI"]
+    },
+    "Backend": {
+      "accent": "cyan",
+      "items": ["Node.js", "Express", "REST APIs", "PostgreSQL", "MongoDB"]
+    },
+    "Cloud / DevOps": {
+      "accent": "purple",
+      "items": ["AWS", "Docker", "Kubernetes", "Prometheus", "Grafana"]
+    },
+    "Frontend": {
+      "accent": "purple",
+      "items": ["React", "JavaScript", "Tailwind CSS"]
+    }
+  },
+  "journey": [
+    {
+      "year": "2024",
+      "title": "2nd Place — IEEE TEMS HackWise",
+      "description": "IIM Indore · Competing against teams from India",
+      "type": "achievement",
+      "color": "gold"
+    },
+    {
+      "year": "2024",
+      "title": "Backend Developer Intern",
+      "description": "Center of Excellence · Production systems",
+      "type": "internship",
+      "color": "cyan"
+    },
+    {
+      "year": "2025",
+      "title": "Software Intern — Checkpoint ALS",
+      "description": "Enterprise software development",
+      "type": "internship",
+      "color": "cyan"
+    },
+    {
+      "year": "Now",
+      "title": "Pre-final Year · Building in public",
+      "description": "Agentic AI · Kubernetes · AWS · System Design",
+      "type": "current",
+      "color": "green"
+    }
+  ]
+}

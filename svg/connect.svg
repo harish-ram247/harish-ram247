@@ -1,0 +1,50 @@
+<svg width="800" height="110" viewBox="0 0 800 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <style>
+    @keyframes pulse      { 0%,100%{opacity:.2}  50%{opacity:.75} }
+    @keyframes pulse-fast { 0%,100%{opacity:.15} 50%{opacity:.9}  }
+    @keyframes float      { 0%,100%{transform:translateY(0px)} 50%{transform:translateY(-6px)} }
+    @keyframes float-sm   { 0%,100%{transform:translateY(0px)} 50%{transform:translateY(-3px)} }
+    @keyframes blink      { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+    @keyframes flow       { 0%{stroke-dashoffset:24} 100%{stroke-dashoffset:0} }
+    @keyframes spin-slow  { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+    @keyframes shimmer    { 0%,100%{opacity:.5} 50%{opacity:1} }
+    .pulse      { animation: pulse 3s ease-in-out infinite; }
+    .pulse-fast { animation: pulse-fast 1.8s ease-in-out infinite; }
+    .float      { animation: float 4s ease-in-out infinite; }
+    .float-sm   { animation: float-sm 3s ease-in-out infinite; }
+    .blink      { animation: blink 1s step-end infinite; }
+    .flow       { animation: flow 2s linear infinite; stroke-dasharray:8 5; }
+    .shimmer    { animation: shimmer 3s ease-in-out infinite; }
+    .d1 { animation-delay: 0s; }
+    .d2 { animation-delay: .4s; }
+    .d3 { animation-delay: .8s; }
+    .d4 { animation-delay: 1.2s; }
+    .d5 { animation-delay: 1.6s; }
+    .d6 { animation-delay: 2.0s; }
+  </style>
+  
+  <pattern id="c-dots" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+  <circle cx="11" cy="11" r="0.65" fill="#141c2e" opacity="0.8"/>
+</pattern>
+  <linearGradient id="c-top" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#1a3a52" stop-opacity="0"/><stop offset="50%" stop-color="#1a3a52" stop-opacity="0.5"/><stop offset="100%" stop-color="#2a1860" stop-opacity="0.5"/></linearGradient>
+</defs>
+
+  <rect width="800" height="110" fill="#0a0e17"/>
+  <rect width="800" height="110" fill="url(#c-dots)" opacity="0.5"/>
+  <line x1="0" y1="0" x2="800" y2="0" stroke="url(#c-top)" stroke-width="1"/>
+  <text x="400" y="20" font-family="'SF Mono', 'Fira Code', 'Fira Mono', 'Cascadia Code', 'Courier New', monospace" font-size="9" font-weight="normal" fill="#484f58" text-anchor="middle" letter-spacing="3">LET'S CONNECT</text>
+  <g>
+      <rect x="276.75" y="38" width="73" height="30" rx="6" fill="#0d1320" stroke="#1c2333" stroke-width="0.7"/>
+      <text x="313.25" y="58" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="11" font-weight="normal" fill="#8b949e" text-anchor="middle">GitHub</text>
+    </g>
+<g>
+      <rect x="359.75" y="38" width="88" height="30" rx="6" fill="#0d1320" stroke="#1c2333" stroke-width="0.7"/>
+      <text x="403.75" y="58" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="11" font-weight="normal" fill="#58a6ff" text-anchor="middle">LinkedIn</text>
+    </g>
+<g>
+      <rect x="457.75" y="38" width="65.5" height="30" rx="6" fill="#0d1320" stroke="#1c2333" stroke-width="0.7"/>
+      <text x="490.5" y="58" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="11" font-weight="normal" fill="#8b949e" text-anchor="middle">Email</text>
+    </g>
+  <text x="400" y="94" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="10" font-weight="normal" fill="#484f58" text-anchor="middle">Open to internships · collaborations · research · interesting problems  ·  IST (UTC+5:30) (Chennai, India)</text>
+</svg>

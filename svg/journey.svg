@@ -1,0 +1,88 @@
+<svg width="800" height="404" viewBox="0 0 800 404" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <style>
+    @keyframes pulse      { 0%,100%{opacity:.2}  50%{opacity:.75} }
+    @keyframes pulse-fast { 0%,100%{opacity:.15} 50%{opacity:.9}  }
+    @keyframes float      { 0%,100%{transform:translateY(0px)} 50%{transform:translateY(-6px)} }
+    @keyframes float-sm   { 0%,100%{transform:translateY(0px)} 50%{transform:translateY(-3px)} }
+    @keyframes blink      { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+    @keyframes flow       { 0%{stroke-dashoffset:24} 100%{stroke-dashoffset:0} }
+    @keyframes spin-slow  { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+    @keyframes shimmer    { 0%,100%{opacity:.5} 50%{opacity:1} }
+    .pulse      { animation: pulse 3s ease-in-out infinite; }
+    .pulse-fast { animation: pulse-fast 1.8s ease-in-out infinite; }
+    .float      { animation: float 4s ease-in-out infinite; }
+    .float-sm   { animation: float-sm 3s ease-in-out infinite; }
+    .blink      { animation: blink 1s step-end infinite; }
+    .flow       { animation: flow 2s linear infinite; stroke-dasharray:8 5; }
+    .shimmer    { animation: shimmer 3s ease-in-out infinite; }
+    .d1 { animation-delay: 0s; }
+    .d2 { animation-delay: .4s; }
+    .d3 { animation-delay: .8s; }
+    .d4 { animation-delay: 1.2s; }
+    .d5 { animation-delay: 1.6s; }
+    .d6 { animation-delay: 2.0s; }
+  </style>
+  
+  <pattern id="j-dots" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+  <circle cx="11" cy="11" r="0.65" fill="#141c2e" opacity="0.8"/>
+</pattern>
+  <filter id="j-glow" x="-40%" y="-40%" width="180%" height="180%">
+  <feGaussianBlur stdDeviation="6" result="blur"/>
+  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+</defs>
+
+  <rect width="800" height="404" fill="#0a0e17"/>
+  <rect width="800" height="404" fill="url(#j-dots)" opacity="0.5"/>
+  <text x="400" y="22" font-family="'SF Mono', 'Fira Code', 'Fira Mono', 'Cascadia Code', 'Courier New', monospace" font-size="9" font-weight="normal" fill="#484f58" text-anchor="middle" letter-spacing="3">JOURNEY</text>
+  <line x1="90" y1="60" x2="90" y2="300" stroke="#1c2333" stroke-width="1.5"/>
+  <g><g>
+      <rect x="10" y="46" width="60" height="22" rx="11" fill="#1e1502" stroke="#3a2804" stroke-width="0.7"/>
+      <text x="40" y="61" font-family="'SF Mono', 'Fira Code', 'Fira Mono', 'Cascadia Code', 'Courier New', monospace" font-size="10" font-weight="normal" fill="#e3b341" text-anchor="middle">2024</text>
+    </g><g>
+          <circle cx="90" cy="60" r="6" fill="#1e1502" stroke="#e3b341" stroke-width="1"/>
+          <circle cx="90" cy="60" r="2.5" fill="#e3b341"/>
+        </g><g>
+      <rect x="112" y="46" width="668" height="58" rx="8" fill="#0d1320" stroke="#1c2333" stroke-width="0.8"/>
+      <line x1="126" y1="46" x2="192" y2="46" stroke="#e3b341" stroke-width="1.2" opacity="0.7"/>
+      <text x="126" y="64" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="start">2nd Place — IEEE TEMS HackWise</text>
+      <text x="126" y="82" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="11" font-weight="normal" fill="#8b949e" text-anchor="start">IIM Indore · Competing against teams from India</text>
+    </g></g>
+<g><g>
+      <rect x="10" y="126" width="60" height="22" rx="11" fill="#071c2e" stroke="#1a3a52" stroke-width="0.7"/>
+      <text x="40" y="141" font-family="'SF Mono', 'Fira Code', 'Fira Mono', 'Cascadia Code', 'Courier New', monospace" font-size="10" font-weight="normal" fill="#58d6ff" text-anchor="middle">2024</text>
+    </g><g>
+          <circle cx="90" cy="140" r="6" fill="#071c2e" stroke="#58d6ff" stroke-width="1"/>
+          <circle cx="90" cy="140" r="2.5" fill="#58d6ff"/>
+        </g><g>
+      <rect x="112" y="126" width="668" height="58" rx="8" fill="#0d1320" stroke="#1c2333" stroke-width="0.8"/>
+      <line x1="126" y1="126" x2="192" y2="126" stroke="#58d6ff" stroke-width="1.2" opacity="0.7"/>
+      <text x="126" y="144" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="start">Backend Developer Intern</text>
+      <text x="126" y="162" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="11" font-weight="normal" fill="#8b949e" text-anchor="start">Center of Excellence · Production systems</text>
+    </g></g>
+<g><g>
+      <rect x="10" y="206" width="60" height="22" rx="11" fill="#071c2e" stroke="#1a3a52" stroke-width="0.7"/>
+      <text x="40" y="221" font-family="'SF Mono', 'Fira Code', 'Fira Mono', 'Cascadia Code', 'Courier New', monospace" font-size="10" font-weight="normal" fill="#58d6ff" text-anchor="middle">2025</text>
+    </g><g>
+          <circle cx="90" cy="220" r="6" fill="#071c2e" stroke="#58d6ff" stroke-width="1"/>
+          <circle cx="90" cy="220" r="2.5" fill="#58d6ff"/>
+        </g><g>
+      <rect x="112" y="206" width="668" height="58" rx="8" fill="#0d1320" stroke="#1c2333" stroke-width="0.8"/>
+      <line x1="126" y1="206" x2="192" y2="206" stroke="#58d6ff" stroke-width="1.2" opacity="0.7"/>
+      <text x="126" y="224" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="start">Software Intern — Checkpoint ALS</text>
+      <text x="126" y="242" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="11" font-weight="normal" fill="#8b949e" text-anchor="start">Enterprise software development</text>
+    </g></g>
+<g><g>
+      <rect x="10" y="286" width="60" height="22" rx="11" fill="#0a1f0d" stroke="#1a3a1a" stroke-width="0.7"/>
+      <text x="40" y="301" font-family="'SF Mono', 'Fira Code', 'Fira Mono', 'Cascadia Code', 'Courier New', monospace" font-size="10" font-weight="700" fill="#3fb950" text-anchor="middle">Now</text>
+    </g><g>
+          <circle cx="90" cy="300" r="8" fill="#0a1f0d" stroke="#3fb950" stroke-width="1.5"/>
+          <circle cx="90" cy="300" r="4" fill="#3fb950" class="pulse-fast"/>
+        </g><g>
+      <rect x="112" y="286" width="668" height="58" rx="8" fill="#0d1320" stroke="#1c2333" stroke-width="0.8"/>
+      <line x1="126" y1="286" x2="192" y2="286" stroke="#3fb950" stroke-width="1.2" opacity="0.7"/>
+      <text x="126" y="304" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="start">Pre-final Year · Building in public</text>
+      <text x="126" y="322" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="11" font-weight="normal" fill="#8b949e" text-anchor="start">Agentic AI · Kubernetes · AWS · System Design</text>
+    </g></g>
+</svg>

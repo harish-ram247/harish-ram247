@@ -1,0 +1,16 @@
+{
+  "name": "harish-github-profile",
+  "version": "1.0.0",
+  "description": "Config-driven premium GitHub profile generator",
+  "main": "scripts/generate-readme.js",
+  "scripts": {
+    "generate": "node scripts/generate-readme.js",
+    "watch": "node --watch scripts/generate-readme.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["github-profile", "readme-generator", "svg"],
+  "author": "Harish Ram S",
+  "license": "MIT"
+}

@@ -1,0 +1,137 @@
+<svg width="800" height="340" viewBox="0 0 800 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <style>
+    @keyframes pulse      { 0%,100%{opacity:.2}  50%{opacity:.75} }
+    @keyframes pulse-fast { 0%,100%{opacity:.15} 50%{opacity:.9}  }
+    @keyframes float      { 0%,100%{transform:translateY(0px)} 50%{transform:translateY(-6px)} }
+    @keyframes float-sm   { 0%,100%{transform:translateY(0px)} 50%{transform:translateY(-3px)} }
+    @keyframes blink      { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+    @keyframes flow       { 0%{stroke-dashoffset:24} 100%{stroke-dashoffset:0} }
+    @keyframes spin-slow  { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+    @keyframes shimmer    { 0%,100%{opacity:.5} 50%{opacity:1} }
+    .pulse      { animation: pulse 3s ease-in-out infinite; }
+    .pulse-fast { animation: pulse-fast 1.8s ease-in-out infinite; }
+    .float      { animation: float 4s ease-in-out infinite; }
+    .float-sm   { animation: float-sm 3s ease-in-out infinite; }
+    .blink      { animation: blink 1s step-end infinite; }
+    .flow       { animation: flow 2s linear infinite; stroke-dasharray:8 5; }
+    .shimmer    { animation: shimmer 3s ease-in-out infinite; }
+    .d1 { animation-delay: 0s; }
+    .d2 { animation-delay: .4s; }
+    .d3 { animation-delay: .8s; }
+    .d4 { animation-delay: 1.2s; }
+    .d5 { animation-delay: 1.6s; }
+    .d6 { animation-delay: 2.0s; }
+  </style>
+  
+  <filter id="glow-soft" x="-40%" y="-40%" width="180%" height="180%">
+  <feGaussianBlur stdDeviation="8" result="blur"/>
+  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+  <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#070c16" stop-opacity="1"/><stop offset="100%" stop-color="#0a0e17" stop-opacity="1"/></linearGradient>
+  <linearGradient id="bottom-fade" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#1c2333" stop-opacity="0"/><stop offset="100%" stop-color="#1c2333" stop-opacity="0.6"/></linearGradient>
+  <radialGradient id="hero-glow" cx="30%" cy="50%" r="60%"><stop offset="0%" stop-color="#58d6ff" stop-opacity="0.06"/><stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/></radialGradient>
+  <pattern id="hero-dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+  <circle cx="14" cy="14" r="0.7" fill="#1a2235" opacity="0.8"/>
+</pattern>
+</defs>
+
+  <rect width="800" height="340" fill="url(#bg-grad)" rx="16"/>
+  <rect width="800" height="340" fill="url(#hero-dots)" rx="16" opacity="0.7"/>
+  <rect width="800" height="340" fill="url(#hero-glow)" rx="16"/>
+  <rect x="0.5" y="0.5" width="799" height="339" stroke="#1c2333" stroke-width="1" rx="16"/>
+  <line x1="0" y1="340" x2="800" y2="340" stroke="url(#bottom-fade)" stroke-width="0.8"/>
+
+  <!-- Left text panel -->
+  <g transform="translate(40, 40)">
+    <rect x="0" y="0" width="160" height="26" rx="13" fill="#0a1f0d" stroke="#1a3a1a" stroke-width="0.8"/>
+    <circle cx="14" cy="13" r="4" fill="#3fb950" class="pulse-fast"/>
+    <text x="25" y="17.5" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3fb950" text-anchor="start">Open to opportunities</text>
+  </g>
+  <text x="40" y="118" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="36" font-weight="700" fill="#e6edf3" text-anchor="start">Harish Ram S</text>
+  <text x="40" y="144" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="13.5" font-weight="normal" fill="#8b949e" text-anchor="start">Computer Science Engineering  ·  Pre-final Year</text>
+  <text font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="13" font-weight="normal" fill="#8b949e" text-anchor="start"><tspan x="40" y="172">Building at the intersection of AI,</tspan><tspan x="40" dy="20">distributed systems, and cloud infrastructure.</tspan><tspan x="40" dy="20">Currently obsessed with agentic AI and</tspan></text>
+  <g>
+      <rect x="40" y="240" width="100" height="36" rx="8" fill="#081628" stroke="#1f6feb" stroke-width="0.8"/>
+      <text x="90" y="263" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="12" font-weight="normal" fill="#58a6ff" text-anchor="middle">LinkedIn</text>
+    </g>
+  <g transform="translate(40, 290)">
+    <rect x="0" y="0" width="22" height="22" rx="4" fill="#0d1320" stroke="#1c2333" stroke-width="0.8"/>
+    <text x="11" y="16" font-family="'SF Mono', 'Fira Code', 'Fira Mono', 'Cascadia Code', 'Courier New', monospace" font-size="12" font-weight="normal" fill="#484f58" text-anchor="middle">@</text>
+    <text x="28" y="16" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="11" font-weight="normal" fill="#484f58" text-anchor="start">harish@domain.com</text>
+  </g>
+
+  <!-- Right illustration -->
+  <g transform="translate(390, 0)" filter="url(#glow-cyan)">
+  <filter id="glow-cyan" x="-40%" y="-40%" width="180%" height="180%">
+  <feFlood result="colored" flood-color="#58d6ff" flood-opacity="1"/><feComposite in="colored" in2="SourceGraphic" operator="in" result="coloredSource"/><feGaussianBlur in="coloredSource" stdDeviation="6" result="blur"/>
+  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+  <filter id="glow-green" x="-40%" y="-40%" width="180%" height="180%">
+  <feFlood result="colored" flood-color="#3fb950" flood-opacity="1"/><feComposite in="colored" in2="SourceGraphic" operator="in" result="coloredSource"/><feGaussianBlur in="coloredSource" stdDeviation="5" result="blur"/>
+  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+  <circle cx="340" cy="168" r="130" fill="none" stroke="#1a3a52" stroke-width="0.5" stroke-dasharray="3 12" opacity="0.4" class="pulse d2"/>
+  <line x1="340" y1="140" x2="220" y2="80" stroke="#1a3a52" stroke-width="1" opacity="0.5" class="shimmer"/>
+<line x1="340" y1="140" x2="460" y2="75" stroke="#1a3a52" stroke-width="1" opacity="0.5" class="shimmer"/>
+<line x1="340" y1="140" x2="180" y2="210" stroke="#1a3a52" stroke-width="1" opacity="0.5" class="shimmer"/>
+<line x1="340" y1="140" x2="480" y2="210" stroke="#1a3a52" stroke-width="1" opacity="0.5" class="shimmer"/>
+<line x1="340" y1="140" x2="340" y2="258" stroke="#1a3a52" stroke-width="1" opacity="0.5" class="shimmer"/>
+<line x1="340" y1="258" x2="260" y2="285" stroke="#1a3a52" stroke-width="1" opacity="0.5" class="shimmer"/>
+<line x1="340" y1="258" x2="420" y2="285" stroke="#1a3a52" stroke-width="1" opacity="0.5" class="shimmer"/>
+<line x1="220" y1="80" x2="180" y2="210" stroke="#1a3a52" stroke-width="1" opacity="0.5" class="shimmer"/>
+<line x1="460" y1="75" x2="480" y2="210" stroke="#1a3a52" stroke-width="1" opacity="0.5" class="shimmer"/>
+  <g class="float d2">
+      <circle cx="220" cy="80" r="18" fill="#071c2e" stroke="#58d6ff" stroke-width="1"/>
+      <circle cx="220" cy="80" r="5.040000000000001" fill="#58d6ff" opacity="0.8"/>
+      <text x="220" y="111" font-family="'SF Mono', 'Fira Code', 'Fira Mono', 'Cascadia Code', 'Courier New', monospace" font-size="9" font-weight="normal" fill="#8b949e" text-anchor="middle">AI/ML</text>
+    </g>
+<g class="float d3">
+      <circle cx="460" cy="75" r="18" fill="#120b2a" stroke="#a371f7" stroke-width="1"/>
+      <circle cx="460" cy="75" r="5.040000000000001" fill="#a371f7" opacity="0.8"/>
+      <text x="460" y="106" font-family="'SF Mono', 'Fira Code', 'Fira Mono', 'Cascadia Code', 'Courier New', monospace" font-size="9" font-weight="normal" fill="#8b949e" text-anchor="middle">Cloud</text>
+    </g>
+<g class="float-sm d4">
+      <circle cx="180" cy="210" r="15" fill="#071c2e" stroke="#58d6ff" stroke-width="1"/>
+      <circle cx="180" cy="210" r="4.2" fill="#58d6ff" opacity="0.8"/>
+      <text x="180" y="238" font-family="'SF Mono', 'Fira Code', 'Fira Mono', 'Cascadia Code', 'Courier New', monospace" font-size="9" font-weight="normal" fill="#8b949e" text-anchor="middle">Backend</text>
+    </g>
+<g class="float-sm d5">
+      <circle cx="480" cy="210" r="15" fill="#0a1f0d" stroke="#3fb950" stroke-width="1"/>
+      <circle cx="480" cy="210" r="4.2" fill="#3fb950" opacity="0.8"/>
+      <text x="480" y="238" font-family="'SF Mono', 'Fira Code', 'Fira Mono', 'Cascadia Code', 'Courier New', monospace" font-size="9" font-weight="normal" fill="#8b949e" text-anchor="middle">IoT</text>
+    </g>
+<g class="float-sm d6">
+      <circle cx="340" cy="258" r="14" fill="#120b2a" stroke="#a371f7" stroke-width="1"/>
+      <circle cx="340" cy="258" r="3.9200000000000004" fill="#a371f7" opacity="0.8"/>
+      <text x="340" y="285" font-family="'SF Mono', 'Fira Code', 'Fira Mono', 'Cascadia Code', 'Courier New', monospace" font-size="9" font-weight="normal" fill="#8b949e" text-anchor="middle">DevOps</text>
+    </g>
+<g class="pulse d2">
+      <circle cx="260" cy="285" r="10" fill="#1e1502" stroke="#e3b341" stroke-width="1"/>
+      <circle cx="260" cy="285" r="2.8000000000000003" fill="#e3b341" opacity="0.8"/>
+      <text x="260" y="308" font-family="'SF Mono', 'Fira Code', 'Fira Mono', 'Cascadia Code', 'Courier New', monospace" font-size="9" font-weight="normal" fill="#8b949e" text-anchor="middle">DB</text>
+    </g>
+<g class="pulse d4">
+      <circle cx="420" cy="285" r="10" fill="#1e1502" stroke="#e3b341" stroke-width="1"/>
+      <circle cx="420" cy="285" r="2.8000000000000003" fill="#e3b341" opacity="0.8"/>
+      <text x="420" y="308" font-family="'SF Mono', 'Fira Code', 'Fira Mono', 'Cascadia Code', 'Courier New', monospace" font-size="9" font-weight="normal" fill="#8b949e" text-anchor="middle">Monitor</text>
+    </g>
+  
+  <g class="float d1">
+    <circle cx="340" cy="140" r="30" fill="#071c2e" stroke="#58d6ff" stroke-width="1.2"/>
+    <circle cx="340" cy="140" r="6" fill="#58d6ff" class="shimmer"/>
+    <text x="340" y="175" font-family="'SF Mono', 'Fira Code', 'Fira Mono', 'Cascadia Code', 'Courier New', monospace" font-size="9.5" font-weight="normal" fill="#8b949e" text-anchor="middle">harish-ram</text>
+  </g>
+  
+  <circle r="2.5" fill="#58d6ff" opacity="0.7" class="pulse d1">
+    <animateMotion dur="3s" repeatCount="indefinite" path="M340,140 L220,80"/>
+  </circle>
+  <circle r="2" fill="#a371f7" opacity="0.6" class="pulse d3">
+    <animateMotion dur="3.5s" repeatCount="indefinite" path="M340,140 L460,75"/>
+  </circle>
+  <circle r="2" fill="#3fb950" opacity="0.6" class="pulse d5">
+    <animateMotion dur="4s" repeatCount="indefinite" path="M340,140 L480,210"/>
+  </circle>
+</g>
+  
+</svg>
