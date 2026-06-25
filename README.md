@@ -1,4 +1,4 @@
-<!-- 
+<!--
   ╔══════════════════════════════════════════════════════════════════════╗
   ║          harish@github — developer machine — SSH session             ║
   ╚══════════════════════════════════════════════════════════════════════╝
@@ -6,87 +6,59 @@
 -->
 
 <div align="center">
-
-```
-Ubuntu 24.04.1 LTS  |  Kernel 6.8.0-generic  |  harish-github tty1
-```
-
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=1200&pause=800&color=00FF41&center=true&vCenter=true&width=700&height=22&lines=Ubuntu+24.04.1+LTS+%7C+Kernel+6.8.0-generic+%7C+harish-github+tty1" alt="system info" />
 </div>
 
-```
-[  OK  ] Loading kernel modules...
-[  OK  ] Mounting filesystems...
-[  OK  ] Starting AI inference engine...
-[  OK  ] Connecting to IoT mesh network...
-[  OK  ] Initializing distributed systems layer...
-[  OK  ] Mounting cloud volumes (AWS)...
-[  OK  ] Starting monitoring stack (Prometheus + Grafana)...
-[  OK  ] Starting agentic AI runtime...
-[  OK  ] All systems operational.
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&duration=600&pause=400&color=00FF41&center=true&vCenter=true&multiline=true&width=700&height=160&lines=%5B++OK++%5D+Loading+kernel+modules...;%5B++OK++%5D+Starting+AI+inference+engine...;%5B++OK++%5D+Connecting+to+IoT+mesh+network...;%5B++OK++%5D+Initializing+distributed+systems+layer...;%5B++OK++%5D+Mounting+cloud+volumes+(AWS)...;%5B++OK++%5D+Starting+monitoring+stack+(Prometheus+%2B+Grafana)...;%5B++OK++%5D+Starting+agentic+AI+runtime...;%5B++OK++%5D+All+systems+operational." alt="boot sequence" />
+</div>
 
-harish-github login: harish
-Password: ████████
-
-Welcome to harish@github — developer machine.
-Last login: Thu Jun 25 2026 10:42:01 from 127.0.0.1
-```
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&duration=2000&pause=2000&color=00FF41&center=true&vCenter=true&width=600&height=22&lines=Welcome+to+harish%40github+%E2%80%94+developer+machine." alt="welcome" />
+</div>
 
 ---
 
-```
-harish@github:~$ neofetch
-```
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&pause=1000&color=00FF41&center=true&vCenter=true&width=400&height=22&lines=harish%40github%3A~%24+neofetch" alt="neofetch command" />
+</div>
 
 ```
     ██╗  ██╗██████╗       harish@github
     ██║  ██║██╔══██╗      ─────────────────────────────────────
-    ███████║██████╔╝       Role     Pre-final Year CS Engineer
-    ██╔══██║██╔══██╗       OS       Ubuntu 24.04.1 LTS (brain)
-    ██║  ██║██║  ██║       Location India
-    ╚═╝  ╚═╝╚═╝  ╚═╝       Shell    bash 5.2.0
-                            Editor   VS Code + Neovim
-                            Languages  Python · JavaScript · Java · C
-                            Backend  Node.js · Express · REST APIs
-                            Cloud    AWS · Docker · Kubernetes
-                            AI/ML    Gen AI · LangChain · Agentic AI
-                            Uptime   20 years, 3 months
-                            Mission  Build things that matter
+    ███████║██████╔╝       Role      Pre-final Year CS Engineer @ CIT, Chennai
+    ██╔══██║██╔══██╗       OS        Ubuntu 24.04.1 LTS (brain)
+    ██║  ██║██║  ██║       Location  India
+    ╚═╝  ╚═╝╚═╝  ╚═╝       Shell     bash 5.2.0
+                            Editor    VS Code + Neovim
+                            Languages Python · JavaScript · Java · C
+                            Backend   Node.js · Express · REST APIs
+                            Cloud     AWS · Docker · Kubernetes
+                            AI/ML     Gen AI · LangChain · Agentic AI
+                            Uptime    20 years, 3 months
+                            Mission   Build things that matter
                            ─────────────────────────────────────
                            ████ ████ ████ ████ ████ ████ ████
 ```
 
 ---
 
-```
-harish@github:~$ whoami
-```
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&pause=1000&color=00FF41&center=true&vCenter=true&width=600&height=22&lines=harish%40github%3A~%24+whoami+%26%26+id" alt="whoami command" />
+</div>
 
 ```
 harish-ram
-```
 
-```
-harish@github:~$ id
-```
-
-```
 uid=1000(harish) gid=1000(engineers)
 groups=AI,BackendEngineering,CloudNative,IndustrialIoT,DistributedSystems,FullStack
 ```
 
 ---
 
-```
-harish@github:~$ pwd
-```
-
-```
-/home/harish/currently-learning/
-```
-
-```
-harish@github:~$ ls -la currently-learning/
-```
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&pause=1000&color=00FF41&center=true&vCenter=true&width=600&height=22&lines=harish%40github%3A~%24+ls+-la+currently-learning%2F" alt="ls command" />
+</div>
 
 ```
 total 4 directories
@@ -100,9 +72,9 @@ drwxr-xr-x  agentic-ai/             # Multi-agent systems, tooling
 
 ---
 
-```
-harish@github:~$ tree ~/projects
-```
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&pause=1000&color=00FF41&center=true&vCenter=true&width=600&height=22&lines=harish%40github%3A~%24+tree+~%2Fprojects" alt="tree command" />
+</div>
 
 ```
 ~/projects
@@ -122,9 +94,9 @@ harish@github:~$ tree ~/projects
 3 directories, 8 subdirectories
 ```
 
-```
-harish@github:~$ cat projects/powersense/README.md
-```
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&pause=1000&color=00FF41&center=true&vCenter=true&width=700&height=22&lines=harish%40github%3A~%24+cat+projects%2Fpowersense%2FREADME.md" alt="cat powersense" />
+</div>
 
 ```
 ───────────────────────────────────────────────────────────
@@ -138,9 +110,9 @@ harish@github:~$ cat projects/powersense/README.md
 ───────────────────────────────────────────────────────────
 ```
 
-```
-harish@github:~$ cat projects/cybercrime-portal/README.md
-```
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&pause=1000&color=00FF41&center=true&vCenter=true&width=700&height=22&lines=harish%40github%3A~%24+cat+projects%2Fcybercrime-portal%2FREADME.md" alt="cat cybercrime" />
+</div>
 
 ```
 ───────────────────────────────────────────────────────────
@@ -154,9 +126,9 @@ harish@github:~$ cat projects/cybercrime-portal/README.md
 ───────────────────────────────────────────────────────────
 ```
 
-```
-harish@github:~$ cat projects/portfolio/README.md
-```
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&pause=1000&color=00FF41&center=true&vCenter=true&width=700&height=22&lines=harish%40github%3A~%24+cat+projects%2Fportfolio%2FREADME.md" alt="cat portfolio" />
+</div>
 
 ```
 ───────────────────────────────────────────────────────────
@@ -171,9 +143,9 @@ harish@github:~$ cat projects/portfolio/README.md
 
 ---
 
-```
-harish@github:~$ cat skills.txt
-```
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&pause=1000&color=00FF41&center=true&vCenter=true&width=500&height=22&lines=harish%40github%3A~%24+cat+skills.txt" alt="cat skills" />
+</div>
 
 ```
 [languages]
@@ -208,9 +180,9 @@ grafana           = intermediate
 
 ---
 
-```
-harish@github:~$ cat achievements.log
-```
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&pause=1000&color=00FF41&center=true&vCenter=true&width=600&height=22&lines=harish%40github%3A~%24+cat+achievements.log" alt="cat achievements" />
+</div>
 
 ```
 [2024-03-15 14:22:01] INFO  :: 2nd Place — IEEE TEMS HackWise Hackathon
@@ -227,9 +199,9 @@ harish@github:~$ cat achievements.log
 
 ---
 
-```
-harish@github:~$ top
-```
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&pause=1000&color=00FF41&center=true&vCenter=true&width=400&height=22&lines=harish%40github%3A~%24+top" alt="top command" />
+</div>
 
 ```
 Tasks: 6 total,  3 running,  2 sleeping,  1 stopped
@@ -250,14 +222,14 @@ Mem:  8192MiB total, 7143MiB used  —  brain.exe is running hot
 
 ---
 
-```
-harish@github:~$ cat contact.conf
-```
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&pause=1000&color=00FF41&center=true&vCenter=true&width=500&height=22&lines=harish%40github%3A~%24+cat+contact.conf" alt="cat contact" />
+</div>
 
 ```
 [network]
-github    = github.com/harishram
-linkedin  = linkedin.com/in/harishram
+github    = github.com/harish-ram247
+linkedin  = linkedin.com/in/harish-ram-s
 email     = harish@domain.com
 
 [availability]
@@ -272,28 +244,28 @@ coffee    = always
 
 ---
 
-```
-harish@github:~$ git log --oneline -3
-```
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&pause=1000&color=00FF41&center=true&vCenter=true&width=600&height=22&lines=harish%40github%3A~%24+git+log+--oneline+-3" alt="git log command" />
+</div>
 
 ```
-a7f3c9d (HEAD -> main)  "still committing every day"
-b2e91fa                  "added kubernetes to the stack"
-c3d04ab                  "first push — let's go"
+a7f3c9d (HEAD -> main)  feat: still committing every day
+b2e91fa                  chore: added kubernetes to the learning stack
+c3d04ab                  feat: first push — let's go
 ```
 
-```
-harish@github:~$ sudo make coffee
-```
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&pause=1000&color=00FF41&center=true&vCenter=true&width=500&height=22&lines=harish%40github%3A~%24+sudo+make+coffee" alt="sudo make coffee" />
+</div>
 
 ```
 [sudo] password for harish:
 Brewing... ████████████████████  Done.
 ```
 
-```
-harish@github:~$ exit
-```
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&pause=1000&color=00FF41&center=true&vCenter=true&width=400&height=22&lines=harish%40github%3A~%24+exit" alt="exit command" />
+</div>
 
 ```
 logout
@@ -303,14 +275,7 @@ Connection to harish@github closed.
 ---
 
 <div align="center">
-
-```
-harish@github:~$ █
-```
-
-<!-- blinking cursor via SVG -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&pause=500&color=00FF41&center=true&vCenter=true&width=200&height=28&lines=harish%40github%3A~%24+%E2%96%88" alt="terminal cursor" />
-
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=500&color=00FF41&center=true&vCenter=true&width=300&height=30&lines=harish%40github%3A~%24+%E2%96%88" alt="terminal cursor" />
 </div>
 
 <!--
