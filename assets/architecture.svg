@@ -1,0 +1,187 @@
+<svg width="800" height="340" viewBox="0 0 800 340" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#060c18"/>
+    <stop offset="100%" stop-color="#08101f"/>
+  </linearGradient>
+  <linearGradient id="header-line" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#00e5ff" stop-opacity="0"/>
+    <stop offset="20%" stop-color="#00e5ff" stop-opacity="0.6"/>
+    <stop offset="80%" stop-color="#7b2fff" stop-opacity="0.6"/>
+    <stop offset="100%" stop-color="#7b2fff" stop-opacity="0"/>
+  </linearGradient>
+  <!-- Node colors -->
+  <radialGradient id="node-cyan" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.25"/>
+    <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="node-purple" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#7b2fff" stop-opacity="0.25"/>
+    <stop offset="100%" stop-color="#7b2fff" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="node-green" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#3fb950" stop-opacity="0.25"/>
+    <stop offset="100%" stop-color="#3fb950" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="3" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+    <circle cx="12" cy="12" r="0.6" fill="#1a2540" opacity="0.6"/>
+  </pattern>
+  <style>
+    @keyframes pulse { 0%,100%{opacity:.3} 50%{opacity:1} }
+    @keyframes flow1 { 0%{stroke-dashoffset:40} 100%{stroke-dashoffset:0} }
+    @keyframes flow2 { 0%{stroke-dashoffset:0} 100%{stroke-dashoffset:-40} }
+    @keyframes node-glow { 0%,100%{opacity:.4} 50%{opacity:.9} }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-3px)} }
+    .flow-line1{animation:flow1 1.8s linear infinite; stroke-dasharray:8 6}
+    .flow-line2{animation:flow1 2.2s linear infinite .4s; stroke-dasharray:8 6}
+    .flow-line3{animation:flow1 2s linear infinite .8s; stroke-dasharray:8 6}
+    .flow-line4{animation:flow1 1.9s linear infinite 1.2s; stroke-dasharray:8 6}
+    .node1{animation:node-glow 2.5s ease-in-out infinite}
+    .node2{animation:node-glow 2.5s ease-in-out infinite .5s}
+    .node3{animation:node-glow 2.5s ease-in-out infinite 1s}
+    .node4{animation:node-glow 2.5s ease-in-out infinite 1.5s}
+    .node5{animation:node-glow 2.5s ease-in-out infinite 2s}
+    .float1{animation:float 3s ease-in-out infinite}
+    .float2{animation:float 3.5s ease-in-out infinite .5s}
+    .float3{animation:float 3.2s ease-in-out infinite 1s}
+    .float4{animation:float 3.8s ease-in-out infinite 1.5s}
+    .float5{animation:float 3.4s ease-in-out infinite 2s}
+  </style>
+</defs>
+
+<rect width="800" height="340" fill="url(#bg)" rx="14"/>
+<rect width="800" height="340" fill="url(#dots)" rx="14" opacity="0.5"/>
+<rect x="0.5" y="0.5" width="799" height="339" fill="none" stroke="#1e3a5f" stroke-width="1" rx="14"/>
+
+<!-- Section header -->
+<text x="400" y="32" font-family="'Courier New',Courier,monospace" font-size="10" fill="#3a6ea8" text-anchor="middle" letter-spacing="4">HOW I BUILD</text>
+<line x1="80" y1="40" x2="720" y2="40" stroke="url(#header-line)" stroke-width="0.8"/>
+<text x="400" y="56" font-family="'Courier New',Courier,monospace" font-size="10" fill="#484f58" text-anchor="middle">problem → design → build → deploy → monitor</text>
+
+<!-- STAGE 1: Problem -->
+<g class="float1" transform="translate(40, 90)">
+  <circle class="node1" cx="65" cy="65" r="58" fill="url(#node-cyan)"/>
+  <rect x="10" y="10" width="110" height="110" rx="12" fill="#040e1c" stroke="#00e5ff" stroke-width="1" opacity="0.9"/>
+  <rect x="10" y="10" width="110" height="110" rx="12" fill="none" stroke="#00e5ff" stroke-width="0.8"/>
+  <!-- Icon: question/problem -->
+  <text x="65" y="55" font-family="'Courier New',Courier,monospace" font-size="28" fill="#00e5ff" text-anchor="middle" filter="url(#glow)">?</text>
+  <text x="65" y="78" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e" text-anchor="middle">Understand</text>
+  <text x="65" y="92" font-family="'Courier New',Courier,monospace" font-size="9.5" fill="#00e5ff" text-anchor="middle">the problem</text>
+  <!-- Bottom tag -->
+  <rect x="22" y="104" width="86" height="14" rx="7" fill="#041420" stroke="#00e5ff" stroke-width="0.5"/>
+  <text x="65" y="114.5" font-family="'Courier New',Courier,monospace" font-size="8" fill="#00e5ff" text-anchor="middle">01 · PROBLEM</text>
+</g>
+
+<!-- Arrow 1→2 -->
+<line class="flow-line1" x1="165" y1="155" x2="215" y2="155" stroke="#00e5ff" stroke-width="1.5" opacity="0.7"/>
+<polygon points="212,151 220,155 212,159" fill="#00e5ff" opacity="0.7"/>
+
+<!-- STAGE 2: Design -->
+<g class="float2" transform="translate(215, 90)">
+  <circle class="node2" cx="65" cy="65" r="58" fill="url(#node-purple)"/>
+  <rect x="10" y="10" width="110" height="110" rx="12" fill="#0c0820" stroke="#7b2fff" stroke-width="1" opacity="0.9"/>
+  <!-- Icon: design/wireframe -->
+  <rect x="32" y="34" width="66" height="46" rx="4" fill="none" stroke="#7b2fff" stroke-width="1.2" filter="url(#glow)"/>
+  <line x1="32" y1="46" x2="98" y2="46" stroke="#7b2fff" stroke-width="0.8" opacity="0.5"/>
+  <rect x="36" y="50" width="26" height="22" rx="2" fill="#7b2fff" opacity="0.2"/>
+  <line x1="68" y1="50" x2="94" y2="50" stroke="#7b2fff" stroke-width="0.6" opacity="0.4"/>
+  <line x1="68" y1="56" x2="94" y2="56" stroke="#7b2fff" stroke-width="0.6" opacity="0.4"/>
+  <line x1="68" y1="62" x2="86" y2="62" stroke="#7b2fff" stroke-width="0.6" opacity="0.4"/>
+  <text x="65" y="94" font-family="'Courier New',Courier,monospace" font-size="9.5" fill="#a371f7" text-anchor="middle">architect &amp;</text>
+  <text x="65" y="106" font-family="'Courier New',Courier,monospace" font-size="9.5" fill="#8b949e" text-anchor="middle">design</text>
+  <rect x="22" y="104" width="86" height="14" rx="7" fill="#0c0820" stroke="#7b2fff" stroke-width="0.5"/>
+  <text x="65" y="114.5" font-family="'Courier New',Courier,monospace" font-size="8" fill="#a371f7" text-anchor="middle">02 · DESIGN</text>
+</g>
+
+<!-- Arrow 2→3 -->
+<line class="flow-line2" x1="340" y1="155" x2="390" y2="155" stroke="#7b2fff" stroke-width="1.5" opacity="0.7"/>
+<polygon points="387,151 395,155 387,159" fill="#7b2fff" opacity="0.7"/>
+
+<!-- STAGE 3: Build -->
+<g class="float3" transform="translate(390, 90)">
+  <circle class="node3" cx="65" cy="65" r="58" fill="url(#node-cyan)"/>
+  <rect x="10" y="10" width="110" height="110" rx="12" fill="#040e1c" stroke="#00e5ff" stroke-width="1" opacity="0.9"/>
+  <!-- Icon: code -->
+  <text x="65" y="65" font-family="'Courier New',Courier,monospace" font-size="13" fill="#00e5ff" text-anchor="middle" filter="url(#glow)">&lt;/&gt;</text>
+  <text x="41" y="52" font-family="'Courier New',Courier,monospace" font-size="10" fill="#3a6ea8">fn(</text>
+  <text x="82" y="52" font-family="'Courier New',Courier,monospace" font-size="10" fill="#3a6ea8">)</text>
+  <text x="65" y="80" font-family="'Courier New',Courier,monospace" font-size="9.5" fill="#8b949e" text-anchor="middle">code it</text>
+  <text x="65" y="92" font-family="'Courier New',Courier,monospace" font-size="9.5" fill="#00e5ff" text-anchor="middle">test it</text>
+  <rect x="22" y="104" width="86" height="14" rx="7" fill="#041420" stroke="#00e5ff" stroke-width="0.5"/>
+  <text x="65" y="114.5" font-family="'Courier New',Courier,monospace" font-size="8" fill="#00e5ff" text-anchor="middle">03 · BUILD</text>
+</g>
+
+<!-- Arrow 3→4 -->
+<line class="flow-line3" x1="515" y1="155" x2="565" y2="155" stroke="#00e5ff" stroke-width="1.5" opacity="0.7"/>
+<polygon points="562,151 570,155 562,159" fill="#00e5ff" opacity="0.7"/>
+
+<!-- STAGE 4: Deploy -->
+<g class="float4" transform="translate(565, 90)">
+  <circle class="node4" cx="65" cy="65" r="58" fill="url(#node-purple)"/>
+  <rect x="10" y="10" width="110" height="110" rx="12" fill="#0c0820" stroke="#7b2fff" stroke-width="1" opacity="0.9"/>
+  <!-- Icon: cloud/deploy -->
+  <ellipse cx="65" cy="52" rx="24" ry="16" fill="none" stroke="#7b2fff" stroke-width="1.2" filter="url(#glow)"/>
+  <rect x="53" y="52" width="24" height="20" rx="0" fill="#0c0820"/>
+  <line x1="65" y1="52" x2="65" y2="72" stroke="#7b2fff" stroke-width="1.5"/>
+  <polygon points="57,68 65,76 73,68" fill="#7b2fff" opacity="0.8"/>
+  <text x="65" y="90" font-family="'Courier New',Courier,monospace" font-size="9.5" fill="#a371f7" text-anchor="middle">docker /</text>
+  <text x="65" y="102" font-family="'Courier New',Courier,monospace" font-size="9.5" fill="#8b949e" text-anchor="middle">kubernetes</text>
+  <rect x="22" y="104" width="86" height="14" rx="7" fill="#0c0820" stroke="#7b2fff" stroke-width="0.5"/>
+  <text x="65" y="114.5" font-family="'Courier New',Courier,monospace" font-size="8" fill="#a371f7" text-anchor="middle">04 · DEPLOY</text>
+</g>
+
+<!-- Arrow 4→5 -->
+<line class="flow-line4" x1="690" y1="155" x2="720" y2="155" stroke="#3fb950" stroke-width="1.5" opacity="0.7"/>
+<polygon points="717,151 725,155 717,159" fill="#3fb950" opacity="0.7"/>
+
+<!-- STAGE 5: Monitor -->
+<g class="float5" transform="translate(718, 90)">
+  <circle class="node5" cx="36" cy="65" r="34" fill="url(#node-green)"/>
+  <rect x="-2" y="10" width="80" height="110" rx="12" fill="#041a0f" stroke="#3fb950" stroke-width="1" opacity="0.9"/>
+  <!-- Icon: chart/monitor -->
+  <polyline points="10,72 20,56 30,64 40,44 50,52 60,40" fill="none" stroke="#3fb950" stroke-width="1.5" filter="url(#glow)"/>
+  <circle cx="60" cy="40" r="3" fill="#3fb950" filter="url(#glow)"/>
+  <text x="38" y="90" font-family="'Courier New',Courier,monospace" font-size="9" fill="#3fb950" text-anchor="middle">observe</text>
+  <text x="38" y="103" font-family="'Courier New',Courier,monospace" font-size="9" fill="#8b949e" text-anchor="middle">iterate</text>
+  <rect x="0" y="104" width="74" height="14" rx="7" fill="#041a0f" stroke="#3fb950" stroke-width="0.5"/>
+  <text x="37" y="114.5" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#3fb950" text-anchor="middle">05 · MONITOR</text>
+</g>
+
+<!-- Tools row at bottom -->
+<line x1="40" y1="232" x2="760" y2="232" stroke="#1e3a5f" stroke-width="0.5"/>
+<text x="400" y="250" font-family="'Courier New',Courier,monospace" font-size="9" fill="#3a6ea8" text-anchor="middle" letter-spacing="2">TOOLS I USE ACROSS THE PIPELINE</text>
+
+<!-- Tool pills -->
+<g transform="translate(50, 260)">
+  <rect x="0" y="0" width="64" height="18" rx="9" fill="#041420" stroke="#00e5ff" stroke-width="0.6"/>
+  <text x="32" y="12.5" font-family="'Courier New',Courier,monospace" font-size="8.5" fill="#00e5ff" text-anchor="middle">Python</text>
+
+  <rect x="74" y="0" width="74" height="18" rx="9" fill="#041420" stroke="#00e5ff" stroke-width="0.6"/>
+  <text x="111" y="12.5" font-family="'Courier New',Courier,monospace" font-size="8.5" fill="#00e5ff" text-anchor="middle">JavaScript</text>
+
+  <rect x="158" y="0" width="68" height="18" rx="9" fill="#0c0820" stroke="#7b2fff" stroke-width="0.6"/>
+  <text x="192" y="12.5" font-family="'Courier New',Courier,monospace" font-size="8.5" fill="#a371f7" text-anchor="middle">Node.js</text>
+
+  <rect x="236" y="0" width="60" height="18" rx="9" fill="#0c0820" stroke="#7b2fff" stroke-width="0.6"/>
+  <text x="266" y="12.5" font-family="'Courier New',Courier,monospace" font-size="8.5" fill="#a371f7" text-anchor="middle">Docker</text>
+
+  <rect x="306" y="0" width="56" height="18" rx="9" fill="#041a0f" stroke="#3fb950" stroke-width="0.6"/>
+  <text x="334" y="12.5" font-family="'Courier New',Courier,monospace" font-size="8.5" fill="#3fb950" text-anchor="middle">Grafana</text>
+
+  <rect x="372" y="0" width="82" height="18" rx="9" fill="#041a0f" stroke="#3fb950" stroke-width="0.6"/>
+  <text x="413" y="12.5" font-family="'Courier New',Courier,monospace" font-size="8.5" fill="#3fb950" text-anchor="middle">Prometheus</text>
+
+  <rect x="464" y="0" width="84" height="18" rx="9" fill="#041420" stroke="#00e5ff" stroke-width="0.6"/>
+  <text x="506" y="12.5" font-family="'Courier New',Courier,monospace" font-size="8.5" fill="#00e5ff" text-anchor="middle">LangChain</text>
+
+  <rect x="558" y="0" width="56" height="18" rx="9" fill="#041420" stroke="#00e5ff" stroke-width="0.6"/>
+  <text x="586" y="12.5" font-family="'Courier New',Courier,monospace" font-size="8.5" fill="#00e5ff" text-anchor="middle">AWS</text>
+
+  <rect x="624" y="0" width="76" height="18" rx="9" fill="#0c0820" stroke="#7b2fff" stroke-width="0.6"/>
+  <text x="662" y="12.5" font-family="'Courier New',Courier,monospace" font-size="8.5" fill="#a371f7" text-anchor="middle">Kubernetes</text>
+</g>
+</svg>

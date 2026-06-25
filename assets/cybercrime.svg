@@ -1,0 +1,94 @@
+<svg width="258" height="300" viewBox="0 0 258 300" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#0c0820"/>
+    <stop offset="100%" stop-color="#100a2a"/>
+  </linearGradient>
+  <linearGradient id="border-top" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#7b2fff" stop-opacity="0.9"/>
+    <stop offset="100%" stop-color="#7b2fff" stop-opacity="0.2"/>
+  </linearGradient>
+  <linearGradient id="bar-bg" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#14072e"/>
+    <stop offset="100%" stop-color="#0c0820"/>
+  </linearGradient>
+  <linearGradient id="bar-fill" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#7b2fff"/>
+    <stop offset="100%" stop-color="#a371f7"/>
+  </linearGradient>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="3" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <style>
+    @keyframes pulse { 0%,100%{opacity:.3} 50%{opacity:1} }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-5px)} }
+    @keyframes shimmer-bar { 0%{opacity:.7} 50%{opacity:1} 100%{opacity:.7} }
+    .icon{animation:float 4s ease-in-out infinite .3s}
+    .dot{animation:pulse 2.2s ease-in-out infinite}
+    .bar{animation:shimmer-bar 3s ease-in-out infinite .5s}
+  </style>
+</defs>
+
+<rect width="258" height="300" fill="url(#bg)" rx="12"/>
+<rect x="0.5" y="0.5" width="257" height="299" fill="none" stroke="#2a1a5e" stroke-width="1" rx="12"/>
+<line x1="1" y1="1" x2="257" y2="1" stroke="url(#border-top)" stroke-width="2"/>
+<line x1="1" y1="1" x2="1" y2="60" stroke="#7b2fff" stroke-width="1" opacity="0.4"/>
+
+<!-- Header badge -->
+<rect x="16" y="18" width="110" height="20" rx="10" fill="#0c0820" stroke="#7b2fff" stroke-width="0.7"/>
+<text x="71" y="32" font-family="'Courier New',Courier,monospace" font-size="9" fill="#a371f7" text-anchor="middle" letter-spacing="0.5">CYBERCRIME PORTAL</text>
+
+<!-- Web3 badge -->
+<rect x="180" y="18" width="60" height="20" rx="10" fill="#041a0f" stroke="#3fb950" stroke-width="0.7"/>
+<text x="210" y="32" font-family="'Courier New',Courier,monospace" font-size="9" fill="#3fb950" text-anchor="middle">Web3</text>
+
+<!-- Icon area -->
+<g class="icon" transform="translate(104, 52)">
+  <!-- Blockchain icon -->
+  <rect x="0" y="0" width="50" height="50" rx="10" fill="#0c0820" stroke="#7b2fff" stroke-width="0.8"/>
+  <!-- Chain blocks -->
+  <rect x="6" y="18" width="14" height="14" rx="3" fill="none" stroke="#7b2fff" stroke-width="1.2" filter="url(#glow)"/>
+  <rect x="30" y="18" width="14" height="14" rx="3" fill="none" stroke="#a371f7" stroke-width="1.2"/>
+  <line x1="20" y1="25" x2="30" y2="25" stroke="#7b2fff" stroke-width="1.5"/>
+  <!-- AI brain dots top -->
+  <circle class="dot" cx="13" cy="10" r="2.5" fill="#7b2fff" filter="url(#glow)"/>
+  <circle cx="25" cy="7" r="2" fill="#7b2fff" opacity="0.5"/>
+  <circle cx="37" cy="10" r="2.5" fill="#a371f7" opacity="0.8"/>
+  <!-- IPFS triangle -->
+  <polygon points="25,34 18,44 32,44" fill="none" stroke="#7b2fff" stroke-width="1" opacity="0.6"/>
+</g>
+
+<text x="129" y="122" font-family="'Segoe UI',Arial,sans-serif" font-size="14" font-weight="700" fill="#e6edf3" text-anchor="middle">Cybercrime Portal</text>
+
+<line x1="20" y1="134" x2="238" y2="134" stroke="#2a1a5e" stroke-width="0.5"/>
+
+<text x="20" y="154" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">Tamper-proof decentralized</text>
+<text x="20" y="168" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">complaint filing with AI triage.</text>
+
+<!-- Stack tags -->
+<g transform="translate(20, 182)">
+  <rect x="0" y="0" width="60" height="16" rx="8" fill="#0c0820" stroke="#7b2fff" stroke-width="0.5"/>
+  <text x="30" y="11.5" font-family="'Courier New',Courier,monospace" font-size="8" fill="#a371f7" text-anchor="middle">Solidity</text>
+  <rect x="66" y="0" width="38" height="16" rx="8" fill="#041420" stroke="#00e5ff" stroke-width="0.5"/>
+  <text x="85" y="11.5" font-family="'Courier New',Courier,monospace" font-size="8" fill="#00e5ff" text-anchor="middle">IPFS</text>
+  <rect x="110" y="0" width="76" height="16" rx="8" fill="#0c0820" stroke="#7b2fff" stroke-width="0.5"/>
+  <text x="148" y="11.5" font-family="'Courier New',Courier,monospace" font-size="8" fill="#a371f7" text-anchor="middle">LangChain</text>
+</g>
+
+<text x="20" y="218" font-family="'Courier New',Courier,monospace" font-size="9" fill="#3a6ea8">role</text>
+<text x="48" y="218" font-family="'Courier New',Courier,monospace" font-size="9" fill="#8b949e">Backend + Smart Contracts</text>
+
+<text x="20" y="238" font-family="'Courier New',Courier,monospace" font-size="9" fill="#3a6ea8">status</text>
+<rect x="58" y="228" width="162" height="7" rx="3.5" fill="url(#bar-bg)"/>
+<rect class="bar" x="58" y="228" width="114" height="7" rx="3.5" fill="url(#bar-fill)" opacity="0.9"/>
+<text x="238" y="237" font-family="'Courier New',Courier,monospace" font-size="9" fill="#a371f7" text-anchor="end">70%</text>
+
+<line x1="20" y1="252" x2="238" y2="252" stroke="#2a1a5e" stroke-width="0.5"/>
+
+<rect x="20" y="262" width="98" height="26" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="0.8"/>
+<text x="69" y="279" font-family="'Courier New',Courier,monospace" font-size="10" fill="#c9d1d9" text-anchor="middle">&#x25CB; GitHub</text>
+
+<rect x="128" y="262" width="110" height="26" rx="6" fill="#0c0820" stroke="#7b2fff" stroke-width="0.8"/>
+<text x="183" y="279" font-family="'Courier New',Courier,monospace" font-size="10" fill="#a371f7" text-anchor="middle">&#x25B6; Live Demo</text>
+</svg>

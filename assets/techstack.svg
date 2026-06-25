@@ -1,0 +1,147 @@
+<svg width="800" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#060c18"/>
+    <stop offset="100%" stop-color="#08101f"/>
+  </linearGradient>
+  <linearGradient id="header-line" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#00e5ff" stop-opacity="0"/>
+    <stop offset="20%" stop-color="#00e5ff" stop-opacity="0.6"/>
+    <stop offset="80%" stop-color="#7b2fff" stop-opacity="0.6"/>
+    <stop offset="100%" stop-color="#7b2fff" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="2.5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <pattern id="dots" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+    <circle cx="11" cy="11" r="0.6" fill="#1a2540" opacity="0.6"/>
+  </pattern>
+  <style>
+    @keyframes pulse { 0%,100%{opacity:.3} 50%{opacity:.9} }
+    @keyframes shimmer { 0%,100%{opacity:.6} 50%{opacity:1} }
+    .sh{animation:shimmer 3s ease-in-out infinite}
+    .dot{animation:pulse 2.5s ease-in-out infinite}
+  </style>
+</defs>
+
+<rect width="800" height="300" fill="url(#bg)" rx="14"/>
+<rect width="800" height="300" fill="url(#dots)" rx="14" opacity="0.5"/>
+<rect x="0.5" y="0.5" width="799" height="299" fill="none" stroke="#1e3a5f" stroke-width="1" rx="14"/>
+
+<!-- Section header -->
+<text x="400" y="30" font-family="'Courier New',Courier,monospace" font-size="10" fill="#3a6ea8" text-anchor="middle" letter-spacing="4">TECH STACK</text>
+<line x1="80" y1="38" x2="720" y2="38" stroke="url(#header-line)" stroke-width="0.8"/>
+
+<!-- Category: AI / ML  (col 1, row 1) -->
+<g transform="translate(20, 55)">
+  <rect x="0" y="0" width="118" height="108" rx="10" fill="#041420" stroke="#00e5ff" stroke-width="0.8" opacity="0.9"/>
+  <text x="59" y="20" font-family="'Courier New',Courier,monospace" font-size="9.5" fill="#00e5ff" text-anchor="middle" letter-spacing="1">AI / ML</text>
+  <line x1="10" y1="26" x2="108" y2="26" stroke="#00e5ff" stroke-width="0.4" opacity="0.4"/>
+  <text x="14" y="44" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">&#x25BA; GenAI</text>
+  <text x="14" y="60" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">&#x25BA; LangChain</text>
+  <text x="14" y="76" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">&#x25BA; Agentic AI</text>
+  <text x="14" y="92" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">&#x25BA; RAG / Agents</text>
+  <text x="80" y="104" font-family="'Courier New',Courier,monospace" font-size="8" fill="#3a6ea8">active</text>
+</g>
+
+<!-- Category: Backend (col 2) -->
+<g transform="translate(154, 55)">
+  <rect x="0" y="0" width="118" height="108" rx="10" fill="#041420" stroke="#00e5ff" stroke-width="0.8" opacity="0.9"/>
+  <text x="59" y="20" font-family="'Courier New',Courier,monospace" font-size="9.5" fill="#00e5ff" text-anchor="middle" letter-spacing="1">BACKEND</text>
+  <line x1="10" y1="26" x2="108" y2="26" stroke="#00e5ff" stroke-width="0.4" opacity="0.4"/>
+  <text x="14" y="44" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">&#x25BA; Node.js</text>
+  <text x="14" y="60" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">&#x25BA; Express</text>
+  <text x="14" y="76" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">&#x25BA; REST APIs</text>
+  <text x="14" y="92" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">&#x25BA; FastAPI</text>
+  <text x="72" y="104" font-family="'Courier New',Courier,monospace" font-size="8" fill="#3a6ea8">advanced</text>
+</g>
+
+<!-- Category: Frontend (col 3) -->
+<g transform="translate(288, 55)">
+  <rect x="0" y="0" width="118" height="108" rx="10" fill="#0c0820" stroke="#7b2fff" stroke-width="0.8" opacity="0.9"/>
+  <text x="59" y="20" font-family="'Courier New',Courier,monospace" font-size="9.5" fill="#a371f7" text-anchor="middle" letter-spacing="1">FRONTEND</text>
+  <line x1="10" y1="26" x2="108" y2="26" stroke="#7b2fff" stroke-width="0.4" opacity="0.4"/>
+  <text x="14" y="44" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">&#x25BA; React</text>
+  <text x="14" y="60" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">&#x25BA; Next.js</text>
+  <text x="14" y="76" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">&#x25BA; Tailwind CSS</text>
+  <text x="14" y="92" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">&#x25BA; Vanilla JS</text>
+  <text x="60" y="104" font-family="'Courier New',Courier,monospace" font-size="8" fill="#484f58">intermediate</text>
+</g>
+
+<!-- Category: Cloud / DevOps (col 4) -->
+<g transform="translate(422, 55)">
+  <rect x="0" y="0" width="118" height="108" rx="10" fill="#0c0820" stroke="#7b2fff" stroke-width="0.8" opacity="0.9"/>
+  <text x="59" y="20" font-family="'Courier New',Courier,monospace" font-size="9.5" fill="#a371f7" text-anchor="middle" letter-spacing="1">CLOUD/OPS</text>
+  <line x1="10" y1="26" x2="108" y2="26" stroke="#7b2fff" stroke-width="0.4" opacity="0.4"/>
+  <text x="14" y="44" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">&#x25BA; AWS</text>
+  <text x="14" y="60" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">&#x25BA; Docker</text>
+  <text x="14" y="76" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">&#x25BA; Kubernetes</text>
+  <text x="14" y="92" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">&#x25BA; Git / GitHub</text>
+  <text x="64" y="104" font-family="'Courier New',Courier,monospace" font-size="8" fill="#3a6ea8">learning</text>
+</g>
+
+<!-- Category: Databases (col 5) -->
+<g transform="translate(556, 55)">
+  <rect x="0" y="0" width="118" height="108" rx="10" fill="#041a0f" stroke="#3fb950" stroke-width="0.8" opacity="0.9"/>
+  <text x="59" y="20" font-family="'Courier New',Courier,monospace" font-size="9.5" fill="#3fb950" text-anchor="middle" letter-spacing="1">DATABASES</text>
+  <line x1="10" y1="26" x2="108" y2="26" stroke="#3fb950" stroke-width="0.4" opacity="0.4"/>
+  <text x="14" y="44" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">&#x25BA; PostgreSQL</text>
+  <text x="14" y="60" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">&#x25BA; MongoDB</text>
+  <text x="14" y="76" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">&#x25BA; InfluxDB</text>
+  <text x="14" y="92" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">&#x25BA; Redis</text>
+  <text x="60" y="104" font-family="'Courier New',Courier,monospace" font-size="8" fill="#484f58">intermediate</text>
+</g>
+
+<!-- Category: Monitoring (col 6) -->
+<g transform="translate(690, 55)">
+  <rect x="0" y="0" width="96" height="108" rx="10" fill="#041a0f" stroke="#3fb950" stroke-width="0.8" opacity="0.9"/>
+  <text x="48" y="20" font-family="'Courier New',Courier,monospace" font-size="9.5" fill="#3fb950" text-anchor="middle" letter-spacing="0.5">MONITOR</text>
+  <line x1="8" y1="26" x2="88" y2="26" stroke="#3fb950" stroke-width="0.4" opacity="0.4"/>
+  <text x="10" y="44" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">&#x25BA; Grafana</text>
+  <text x="10" y="60" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">&#x25BA; Prometheus</text>
+  <text x="10" y="76" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">&#x25BA; InfluxDB</text>
+  <text x="10" y="92" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">&#x25BA; Loki</text>
+  <text x="38" y="104" font-family="'Courier New',Courier,monospace" font-size="8" fill="#3a6ea8">active</text>
+</g>
+
+<!-- Language proficiency bars row 2 -->
+<text x="400" y="192" font-family="'Courier New',Courier,monospace" font-size="9" fill="#3a6ea8" text-anchor="middle" letter-spacing="2">LANGUAGE PROFICIENCY</text>
+<line x1="80" y1="198" x2="720" y2="198" stroke="#1e3a5f" stroke-width="0.4"/>
+
+<g transform="translate(30, 210)">
+  <!-- Python -->
+  <text x="0" y="14" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">Python</text>
+  <rect x="72" y="5" width="110" height="7" rx="3.5" fill="#0d1f35"/>
+  <rect class="sh" x="72" y="5" width="104" height="7" rx="3.5" fill="#00e5ff" opacity="0.8"/>
+  <text x="188" y="14" font-family="'Courier New',Courier,monospace" font-size="9" fill="#00e5ff">95%</text>
+
+  <!-- JavaScript -->
+  <text x="218" y="14" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">JavaScript</text>
+  <rect x="308" y="5" width="110" height="7" rx="3.5" fill="#0d1f35"/>
+  <rect class="sh" x="308" y="5" width="99" height="7" rx="3.5" fill="#e3b341" opacity="0.8" style="animation-delay:.5s"/>
+  <text x="424" y="14" font-family="'Courier New',Courier,monospace" font-size="9" fill="#e3b341">90%</text>
+
+  <!-- Java -->
+  <text x="454" y="14" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">Java</text>
+  <rect x="494" y="5" width="110" height="7" rx="3.5" fill="#0d1f35"/>
+  <rect class="sh" x="494" y="5" width="77" height="7" rx="3.5" fill="#e05050" opacity="0.8" style="animation-delay:1s"/>
+  <text x="610" y="14" font-family="'Courier New',Courier,monospace" font-size="9" fill="#e05050">70%</text>
+
+  <!-- C -->
+  <text x="640" y="14" font-family="'Courier New',Courier,monospace" font-size="10" fill="#8b949e">C</text>
+  <rect x="660" y="5" width="110" height="7" rx="3.5" fill="#0d1f35"/>
+  <rect class="sh" x="660" y="5" width="77" height="7" rx="3.5" fill="#7b2fff" opacity="0.8" style="animation-delay:1.5s"/>
+  <text x="776" y="14" font-family="'Courier New',Courier,monospace" font-size="9" fill="#a371f7">70%</text>
+</g>
+
+<!-- Legend row -->
+<g transform="translate(186, 255)">
+  <circle cx="6" cy="6" r="4" fill="#00e5ff" opacity="0.8"/>
+  <text x="16" y="10" font-family="'Courier New',Courier,monospace" font-size="9" fill="#484f58">active · advanced</text>
+  <circle cx="152" cy="6" r="4" fill="#7b2fff" opacity="0.8"/>
+  <text x="162" y="10" font-family="'Courier New',Courier,monospace" font-size="9" fill="#484f58">intermediate</text>
+  <circle cx="272" cy="6" r="4" fill="#3fb950" opacity="0.8"/>
+  <text x="282" y="10" font-family="'Courier New',Courier,monospace" font-size="9" fill="#484f58">learning</text>
+</g>
+</svg>

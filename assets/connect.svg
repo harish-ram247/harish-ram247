@@ -1,0 +1,79 @@
+<svg width="800" height="160" viewBox="0 0 800 160" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#060c18"/>
+    <stop offset="100%" stop-color="#08101f"/>
+  </linearGradient>
+  <linearGradient id="header-line" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#00e5ff" stop-opacity="0"/>
+    <stop offset="20%" stop-color="#00e5ff" stop-opacity="0.6"/>
+    <stop offset="80%" stop-color="#7b2fff" stop-opacity="0.6"/>
+    <stop offset="100%" stop-color="#7b2fff" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="bottom-line" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#7b2fff" stop-opacity="0"/>
+    <stop offset="30%" stop-color="#7b2fff" stop-opacity="0.8"/>
+    <stop offset="70%" stop-color="#00e5ff" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="2.5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <pattern id="dots" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+    <circle cx="11" cy="11" r="0.6" fill="#1a2540" opacity="0.6"/>
+  </pattern>
+  <style>
+    @keyframes pulse { 0%,100%{opacity:.3} 50%{opacity:.9} }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-3px)} }
+    .dot{animation:pulse 2.5s ease-in-out infinite}
+    .i1{animation:float 3s ease-in-out infinite}
+    .i2{animation:float 3.5s ease-in-out infinite .4s}
+    .i3{animation:float 3.2s ease-in-out infinite .8s}
+    .i4{animation:float 3.8s ease-in-out infinite 1.2s}
+  </style>
+</defs>
+
+<rect width="800" height="160" fill="url(#bg)" rx="14"/>
+<rect width="800" height="160" fill="url(#dots)" rx="14" opacity="0.5"/>
+<rect x="0.5" y="0.5" width="799" height="159" fill="none" stroke="#1e3a5f" stroke-width="1" rx="14"/>
+<line x1="1" y1="159" x2="799" y2="159" stroke="url(#bottom-line)" stroke-width="2"/>
+
+<!-- Header -->
+<text x="400" y="30" font-family="'Courier New',Courier,monospace" font-size="10" fill="#3a6ea8" text-anchor="middle" letter-spacing="4">LET'S CONNECT</text>
+<line x1="80" y1="38" x2="720" y2="38" stroke="url(#header-line)" stroke-width="0.8"/>
+
+<!-- GitHub button -->
+<g class="i1" transform="translate(40, 54)">
+  <rect x="0" y="0" width="152" height="76" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="0.8"/>
+  <text x="76" y="28" font-family="'Courier New',Courier,monospace" font-size="18" fill="#c9d1d9" text-anchor="middle">&#x25CB;</text>
+  <text x="76" y="48" font-family="'Courier New',Courier,monospace" font-size="11" fill="#c9d1d9" text-anchor="middle">GitHub</text>
+  <text x="76" y="62" font-family="'Courier New',Courier,monospace" font-size="9" fill="#484f58" text-anchor="middle">github.com/harish-ram247</text>
+</g>
+
+<!-- LinkedIn button -->
+<g class="i2" transform="translate(210, 54)">
+  <rect x="0" y="0" width="152" height="76" rx="10" fill="#081628" stroke="#1f6feb" stroke-width="0.8"/>
+  <text x="76" y="26" font-family="'Courier New',Courier,monospace" font-size="16" fill="#58a6ff" text-anchor="middle">in</text>
+  <text x="76" y="48" font-family="'Courier New',Courier,monospace" font-size="11" fill="#58a6ff" text-anchor="middle">LinkedIn</text>
+  <text x="76" y="62" font-family="'Courier New',Courier,monospace" font-size="9" fill="#484f58" text-anchor="middle">linkedin.com/in/harish-ram-s</text>
+</g>
+
+<!-- Email button -->
+<g class="i3" transform="translate(380, 54)">
+  <rect x="0" y="0" width="152" height="76" rx="10" fill="#041420" stroke="#00e5ff" stroke-width="0.8"/>
+  <text x="76" y="26" font-family="'Courier New',Courier,monospace" font-size="15" fill="#00e5ff" text-anchor="middle">@</text>
+  <text x="76" y="48" font-family="'Courier New',Courier,monospace" font-size="11" fill="#00e5ff" text-anchor="middle">Email</text>
+  <text x="76" y="62" font-family="'Courier New',Courier,monospace" font-size="9" fill="#484f58" text-anchor="middle">harish@domain.com</text>
+</g>
+
+<!-- Availability info -->
+<g class="i4" transform="translate(550, 54)">
+  <rect x="0" y="0" width="210" height="76" rx="10" fill="#041a0f" stroke="#3fb950" stroke-width="0.8"/>
+  <circle class="dot" cx="22" cy="22" r="6" fill="#3fb950" filter="url(#glow)"/>
+  <text x="38" y="26" font-family="'Courier New',Courier,monospace" font-size="11" fill="#3fb950">Available</text>
+  <line x1="10" y1="34" x2="200" y2="34" stroke="#3fb950" stroke-width="0.4" opacity="0.4"/>
+  <text x="10" y="50" font-family="'Courier New',Courier,monospace" font-size="9" fill="#8b949e">Internships · Collaborations</text>
+  <text x="10" y="64" font-family="'Courier New',Courier,monospace" font-size="9" fill="#8b949e">Research · Interesting Problems</text>
+</g>
+</svg>

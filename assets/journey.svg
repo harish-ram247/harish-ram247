@@ -1,0 +1,97 @@
+<svg width="800" height="270" viewBox="0 0 800 270" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#060c18"/>
+    <stop offset="100%" stop-color="#08101f"/>
+  </linearGradient>
+  <linearGradient id="header-line" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#00e5ff" stop-opacity="0"/>
+    <stop offset="20%" stop-color="#00e5ff" stop-opacity="0.6"/>
+    <stop offset="80%" stop-color="#7b2fff" stop-opacity="0.6"/>
+    <stop offset="100%" stop-color="#7b2fff" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="3" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <pattern id="dots" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+    <circle cx="11" cy="11" r="0.6" fill="#1a2540" opacity="0.6"/>
+  </pattern>
+  <style>
+    @keyframes pulse { 0%,100%{opacity:.2} 50%{opacity:.9} }
+    @keyframes node-in { 0%{opacity:0;transform:scale(.5)} 100%{opacity:1;transform:scale(1)} }
+    .n1{animation:pulse 3s ease-in-out infinite}
+    .n2{animation:pulse 3s ease-in-out infinite .5s}
+    .n3{animation:pulse 3s ease-in-out infinite 1s}
+    .n4{animation:pulse 3s ease-in-out infinite 1.5s}
+    .line-pulse{animation:pulse 2.5s ease-in-out infinite}
+  </style>
+</defs>
+
+<rect width="800" height="270" fill="url(#bg)" rx="14"/>
+<rect width="800" height="270" fill="url(#dots)" rx="14" opacity="0.5"/>
+<rect x="0.5" y="0.5" width="799" height="269" fill="none" stroke="#1e3a5f" stroke-width="1" rx="14"/>
+
+<!-- Header -->
+<text x="400" y="30" font-family="'Courier New',Courier,monospace" font-size="10" fill="#3a6ea8" text-anchor="middle" letter-spacing="4">JOURNEY</text>
+<line x1="80" y1="38" x2="720" y2="38" stroke="url(#header-line)" stroke-width="0.8"/>
+
+<!-- Vertical timeline line -->
+<line x1="80" y1="55" x2="80" y2="230" stroke="#1e3a5f" stroke-width="1.5"/>
+
+<!-- EVENT 1: 2024 May — Checkpoint ALS -->
+<g transform="translate(0, 55)">
+  <!-- Node -->
+  <circle class="n1" cx="80" cy="20" r="6" fill="#00e5ff" filter="url(#glow)"/>
+  <circle cx="80" cy="20" r="3" fill="#00e5ff"/>
+  <!-- Date -->
+  <text x="58" y="12" font-family="'Courier New',Courier,monospace" font-size="8.5" fill="#3a6ea8" text-anchor="end">May</text>
+  <text x="58" y="24" font-family="'Courier New',Courier,monospace" font-size="8.5" fill="#3a6ea8" text-anchor="end">2024</text>
+  <!-- Card -->
+  <rect x="100" y="4" width="340" height="36" rx="8" fill="#040e1c" stroke="#00e5ff" stroke-width="0.8"/>
+  <text x="116" y="22" font-family="'Courier New',Courier,monospace" font-size="11" fill="#e6edf3">Software Intern — Checkpoint ALS</text>
+  <text x="116" y="35" font-family="'Courier New',Courier,monospace" font-size="9" fill="#8b949e">Enterprise software development</text>
+  <!-- Type tag -->
+  <rect x="452" y="10" width="66" height="16" rx="8" fill="#041420" stroke="#00e5ff" stroke-width="0.5"/>
+  <text x="485" y="21.5" font-family="'Courier New',Courier,monospace" font-size="8" fill="#00e5ff" text-anchor="middle">internship</text>
+</g>
+
+<!-- EVENT 2: 2024 Aug — Center of Excellence -->
+<g transform="translate(0, 110)">
+  <circle class="n2" cx="80" cy="20" r="6" fill="#7b2fff" filter="url(#glow)"/>
+  <circle cx="80" cy="20" r="3" fill="#7b2fff"/>
+  <text x="58" y="12" font-family="'Courier New',Courier,monospace" font-size="8.5" fill="#3a6ea8" text-anchor="end">Aug</text>
+  <text x="58" y="24" font-family="'Courier New',Courier,monospace" font-size="8.5" fill="#3a6ea8" text-anchor="end">2024</text>
+  <rect x="100" y="4" width="380" height="36" rx="8" fill="#0c0820" stroke="#7b2fff" stroke-width="0.8"/>
+  <text x="116" y="22" font-family="'Courier New',Courier,monospace" font-size="11" fill="#e6edf3">Backend Developer Intern — Center of Excellence</text>
+  <text x="116" y="35" font-family="'Courier New',Courier,monospace" font-size="9" fill="#8b949e">Production systems · Node.js · REST APIs</text>
+  <rect x="492" y="10" width="66" height="16" rx="8" fill="#0c0820" stroke="#7b2fff" stroke-width="0.5"/>
+  <text x="525" y="21.5" font-family="'Courier New',Courier,monospace" font-size="8" fill="#a371f7" text-anchor="middle">internship</text>
+</g>
+
+<!-- EVENT 3: 2025 Feb — IEEE HackWise -->
+<g transform="translate(0, 165)">
+  <circle class="n3" cx="80" cy="20" r="6" fill="#e3b341" filter="url(#glow)"/>
+  <circle cx="80" cy="20" r="3" fill="#e3b341"/>
+  <text x="58" y="12" font-family="'Courier New',Courier,monospace" font-size="8.5" fill="#3a6ea8" text-anchor="end">Feb</text>
+  <text x="58" y="24" font-family="'Courier New',Courier,monospace" font-size="8.5" fill="#3a6ea8" text-anchor="end">2025</text>
+  <rect x="100" y="4" width="400" height="36" rx="8" fill="#1a1004" stroke="#e3b341" stroke-width="0.8"/>
+  <text x="116" y="22" font-family="'Courier New',Courier,monospace" font-size="11" fill="#e6edf3">2nd Place — IEEE TEMS HackWise · IIM Indore</text>
+  <text x="116" y="35" font-family="'Courier New',Courier,monospace" font-size="9" fill="#8b949e">Competed against 200+ teams across India</text>
+  <rect x="512" y="10" width="66" height="16" rx="8" fill="#1a1004" stroke="#e3b341" stroke-width="0.5"/>
+  <text x="545" y="21.5" font-family="'Courier New',Courier,monospace" font-size="8" fill="#e3b341" text-anchor="middle">hackathon</text>
+</g>
+
+<!-- EVENT 4: 2026 — Current/Active -->
+<g transform="translate(0, 220)">
+  <circle class="n4" cx="80" cy="14" r="7" fill="#3fb950" filter="url(#glow)"/>
+  <circle cx="80" cy="14" r="3.5" fill="#3fb950"/>
+  <text x="58" y="10" font-family="'Courier New',Courier,monospace" font-size="8.5" fill="#3a6ea8" text-anchor="end">Now</text>
+  <text x="58" y="22" font-family="'Courier New',Courier,monospace" font-size="8.5" fill="#3a6ea8" text-anchor="end">2026</text>
+  <rect x="100" y="0" width="280" height="28" rx="8" fill="#041a0f" stroke="#3fb950" stroke-width="0.8"/>
+  <circle cx="115" cy="14" r="4" fill="#3fb950" class="n4"/>
+  <text x="128" y="18" font-family="'Courier New',Courier,monospace" font-size="10.5" fill="#e6edf3">Pre-final Year CSE · Still shipping</text>
+  <rect x="392" y="6" width="76" height="16" rx="8" fill="#041a0f" stroke="#3fb950" stroke-width="0.5"/>
+  <text x="430" y="17.5" font-family="'Courier New',Courier,monospace" font-size="8" fill="#3fb950" text-anchor="middle">open · active</text>
+</g>
+</svg>
