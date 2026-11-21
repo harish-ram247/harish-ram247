@@ -1,27 +1,73 @@
-<h1 align="center">About Me &nbsp;🚀</h1>
-
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" width="500" alt="developer coding" />
+
+<img src="./assets/header.svg" width="100%" alt="Harish Ram S — terminal intro" />
+
+<br/>
+
+<code><a href="https://portfolio-harishrams.vercel.app/">portfolio</a></code> &nbsp;
+<code><a href="https://linkedin.com/in/harish-ram-s">linkedin</a></code> &nbsp;
+<code><a href="https://leetcode.com">leetcode</a></code> &nbsp;
+<code><a href="https://hackerrank.com">hackerrank</a></code> &nbsp;
+<img src="https://komarev.com/ghpvc/?username=harish-ram247&label=views&color=0d1117&style=flat-square" alt="Profile views" align="center" />
+
 </div>
 
 <br/>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=harish-ram247&label=Profile%20Views&color=0e75b6&style=flat" alt="profile views" />
+### `~/about`
+
+```yaml
+name:      Harish Ram S
+role:      Pre-final year CSE @ Chennai Institute of Technology
+building:  at the intersection of AI, distributed systems & cloud infra
+currently: obsessed with Agentic AI and Kubernetes
+believes:  ship small, measure, then scale
+```
+
+### `~/stack`
+
+<p>
+  <img src="https://skillicons.dev/icons?i=java,nodejs,python,ts,react&theme=dark" height="40" alt="Languages & frameworks" />
+  &nbsp;&nbsp;
+  <img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,linux,git&theme=dark" height="40" alt="Cloud & tooling" />
 </p>
 
-**Hello World! 👋**
+### `~/projects`
 
-I am Harish Ram S, a pre-final year Computer Science Engineering student at CIT, Chennai — building at the intersection of AI, distributed systems, and cloud infrastructure. Currently obsessed with Agentic AI and Kubernetes.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/harish-ram247/Kavrix"><b>kavrix</b></a> <sub><code>python</code> <code>yolov8</code></sub><br/>
+      <sub>AI for public safety: drone feeds → crowd-crush risk scores, privacy-first face matching, and SHA-256 hash-chained, signed evidence.</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/harish-ram247/Expense_Tracker"><b>spendwise</b></a> <sub><code>react native</code> <code>typescript</code></sub><br/>
+      <sub>Offline-first expense tracker for Android — budgets, insights and trends, all in on-device SQLite. No account, no server.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/harish-ram247/AI-Fitness-Nutrition-Assistant"><b>ai-fitness-nutrition</b></a> <sub><code>typescript</code> <code>llm</code></sub><br/>
+      <sub>An AI assistant for personalised workout and nutrition guidance.</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/harish-ram247/GenAI-LLM--lab-experiments"><b>genai-llm-lab</b></a> <sub><code>jupyter</code> <code>python</code></sub><br/>
+      <sub>Notebook experiments with LLMs, prompting and GenAI pipelines.</sub>
+    </td>
+  </tr>
+</table>
 
-Want to know more about me? [Checkout my portfolio.](#)
+### `~/stats`
 
----
+<p>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=harish-ram247&hide_border=true&background=0d1117&ring=ff7a59&fire=ff7a59&currStreakNum=e6edf3&currStreakLabel=ff7a59&sideNums=e6edf3&sideLabels=c9d1d9&dates=6e7681&stroke=30363d" height="150" alt="Contribution streak" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=harish-ram247&layout=compact&hide_border=true&bg_color=0d1117&title_color=ff7a59&text_color=c9d1d9&langs_count=6" height="150" alt="Top languages" />
+</p>
 
-### Social
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=harish-ram247&bg_color=0d1117&color=c9d1d9&line=ff7a59&point=e6edf3&area=true&area_color=ff7a59&hide_border=true&custom_title=commit%20activity" width="100%" alt="Contribution graph" />
 
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/harish-ram-s)
-[![GitHub](https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/harish-ram247)
-[![Gmail](https://img.shields.io/badge/GMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:harish@domain.com)
-[![HackerRank](https://img.shields.io/badge/HACKERRANK-00EA64?style=for-the-badge&logo=hackerrank&logoColor=black)](https://hackerrank.com)
-[![LeetCode](https://img.shields.io/badge/LEETCODE-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com)
+<br/>
+
+<div align="center">
+  <sub><code>λ ~ exit 0</code> &nbsp;·&nbsp; thanks for stopping by</sub>
+</div>
