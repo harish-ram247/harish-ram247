@@ -7,8 +7,7 @@
 <code><a href="https://portfolio-harishrams.vercel.app/">portfolio</a></code> &nbsp;
 <code><a href="https://linkedin.com/in/harish-ram-s">linkedin</a></code> &nbsp;
 <code><a href="https://leetcode.com">leetcode</a></code> &nbsp;
-<code><a href="https://hackerrank.com">hackerrank</a></code> &nbsp;
-<img src="https://komarev.com/ghpvc/?username=harish-ram247&label=views&color=0d1117&style=flat-square" alt="Profile views" align="center" />
+<code><a href="https://hackerrank.com">hackerrank</a></code>
 
 </div>
 
