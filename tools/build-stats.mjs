@@ -115,23 +115,56 @@ await writeFile(new URL('../assets/stats.svg', import.meta.url), card(W, H, 'git
 
 // ---- activity heatmap ---------------------------------------------------------
 const CELL = 12, GAPX = 3, AX = 56, AY = 84;
-const levels = [C.sep, '#5a2f24', '#8f442d', '#c95a3a', C.acc];
+// "Crystal Blue" scale, ending at #C5DAFF.
+const CRYSTAL = '#C5DAFF';
+const levels = ['#1c2230', '#2b3d5c', '#4e6a99', '#8aa6d6', CRYSTAL];
 const max = Math.max(...days.map(d => d.n), 1);
 const lvl = n => (n === 0 ? 0 : Math.min(4, Math.ceil((n / max) * 4)));
 const first = new Date(days[0].date + 'T00:00:00Z');
 const offset = first.getUTCDay();
+const STEP = CELL + GAPX;
+const cols = Math.ceil((days.length + offset) / 7);
+
+// Snake: crawls the grid column by column (down, up, down…) and eats each
+// contribution as its head passes, then the grid resets and it loops.
+const PER = 0.055;                        // seconds per cell
+const cellsOnPath = cols * 7;
+const MOVE = PER * (cellsOnPath - 1);
+const DUR = MOVE + 2.5;                   // short pause before the next lap
+const pathIndex = (col, row) => col * 7 + (col % 2 === 0 ? row : 6 - row);
+const centre = (col, row) => [AX + col * STEP + CELL / 2, AY + row * STEP + CELL / 2];
+const pts = [];
+for (let c = 0; c < cols; c++) for (let r = 0; r < 7; r++) pts.push(centre(c, c % 2 === 0 ? r : 6 - r));
+const snakePath = 'M' + pts.map(p => p.join(' ')).join(' L');
+const frac = t => Math.min(Math.max(t / DUR, 0.0001), 0.9999).toFixed(5);
+
 let a = '';
 let lastMonth = -1;
 days.forEach((d, k) => {
   const idx = k + offset, col = Math.floor(idx / 7), row = idx % 7;
-  const x = AX + col * (CELL + GAPX), y = AY + row * (CELL + GAPX);
-  a += `<rect x="${x}" y="${y}" width="${CELL}" height="${CELL}" rx="2.5" fill="${levels[lvl(d.n)]}"/>`;
+  const x = AX + col * STEP, y = AY + row * STEP;
+  const fill = levels[lvl(d.n)];
+  const eat = d.n
+    ? `<animate attributeName="fill" values="${fill};${levels[0]};${levels[0]}" keyTimes="0;${frac(pathIndex(col, row) * PER)};1" calcMode="discrete" dur="${DUR.toFixed(2)}s" repeatCount="indefinite"/>`
+    : '';
+  a += `<rect x="${x}" y="${y}" width="${CELL}" height="${CELL}" rx="2.5" fill="${fill}">${eat}</rect>`;
   const dt = new Date(d.date + 'T00:00:00Z');
   if (row === 0 && dt.getUTCMonth() !== lastMonth && dt.getUTCDate() <= 7) {
     lastMonth = dt.getUTCMonth();
     a += `<text x="${x}" y="${AY - 10}" font-size="10.5" fill="${C.dim}">${dt.toLocaleString('en', { month: 'short', timeZone: 'UTC' }).toLowerCase()}</text>`;
   }
 });
+const SEGMENTS = 6;
+const moveEnd = frac(MOVE);
+for (let k = SEGMENTS - 1; k >= 0; k--) {
+  const begin = `${(k * PER).toFixed(3)}s`;
+  const size = CELL - (k ? 1 + k * 0.6 : 0);
+  const op = (1 - k * 0.13).toFixed(2);
+  a += `<rect x="${-size / 2}" y="${-size / 2}" width="${size}" height="${size}" rx="${k ? 2.5 : 3.5}" fill="${CRYSTAL}" opacity="0">`
+    + `<animateMotion path="${snakePath}" keyPoints="0;1;1" keyTimes="0;${moveEnd};1" calcMode="linear" dur="${DUR.toFixed(2)}s" begin="${begin}" repeatCount="indefinite"/>`
+    + `<animate attributeName="opacity" values="${op};0" keyTimes="0;${moveEnd}" calcMode="discrete" dur="${DUR.toFixed(2)}s" begin="${begin}" repeatCount="indefinite"/>`
+    + `</rect>`;
+}
 ['mon', 'wed', 'fri'].forEach((d, k) => { a += `<text x="${AX - 10}" y="${AY + (1 + 2 * k) * (CELL + GAPX) + 10}" font-size="10" fill="${C.dim}" text-anchor="end">${d}</text>`; });
 const AH = AY + 7 * (CELL + GAPX) + 44;
 a += `<text x="32" y="${AH - 18}" font-size="12" fill="${C.mute}"><tspan fill="${C.hi}" font-weight="700">${total}</tspan> contributions · <tspan fill="${C.hi}" font-weight="700">${activeDays}</tspan> active days in the last year</text>`;
