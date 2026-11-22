@@ -4,7 +4,7 @@
     .dim  { fill: #6e7681; }
     .txt  { fill: #c9d1d9; }
     .hi   { fill: #e6edf3; font-weight: 700; }
-    .acc  { fill: #ff7a59; }
+    .acc  { fill: #C5DAFF; }
     .ok   { fill: #7ee787; }
     .blue { fill: #79c0ff; }
     .tag  { fill: #d2a8ff; }
@@ -14,9 +14,9 @@
 
   <defs>
     <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ff7a59" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#ff7a59" stop-opacity="0.9"/>
-      <stop offset="1" stop-color="#ff7a59" stop-opacity="0"/>
+      <stop offset="0" stop-color="#C5DAFF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#C5DAFF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#C5DAFF" stop-opacity="0"/>
     </linearGradient>
     <clipPath id="c1"><rect x="80" y="60" height="24" width="0"><animate attributeName="width" from="0" to="80" begin="0.4s" dur="0.5s" fill="freeze"/></rect></clipPath>
     <clipPath id="c2"><rect x="80" y="124" height="24" width="0"><animate attributeName="width" from="0" to="140" begin="1.6s" dur="0.7s" fill="freeze"/></rect></clipPath>
@@ -64,6 +64,6 @@
   <g opacity="0">
     <set attributeName="opacity" to="1" begin="5.6s" fill="freeze"/>
     <text x="40" y="326" class="mono"><tspan class="ok">λ</tspan> <tspan class="blue">~</tspan></text>
-    <rect class="cursor" x="80" y="313" width="9" height="17" fill="#ff7a59"/>
+    <rect class="cursor" x="80" y="313" width="9" height="17" fill="#C5DAFF"/>
   </g>
 </svg>

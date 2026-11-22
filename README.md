@@ -30,6 +30,8 @@ believes:  ship small, measure, then scale
 
 ### `~/projects`
 
+<img src="./assets/pods.svg" width="100%" alt="Projects as Kubernetes pods: kavrix-ai-safety Running, spendwise-app Running, trace-rag-backend Pending, portfolio-web Running" />
+
 <table>
   <tr>
     <td width="50%" valign="top">

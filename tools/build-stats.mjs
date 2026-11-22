@@ -8,7 +8,7 @@ const USER = 'harish-ram247';
 const headers = { 'User-Agent': 'profile-stats-builder', Accept: 'application/vnd.github+json' };
 if (process.env.GITHUB_TOKEN) headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
 
-const C = { bg: '#0d1117', line: '#30363d', sep: '#21262d', text: '#c9d1d9', hi: '#e6edf3', dim: '#6e7681', mute: '#8b949e', acc: '#ff7a59', ok: '#7ee787', blue: '#79c0ff' };
+const C = { bg: '#0d1117', line: '#30363d', sep: '#21262d', text: '#c9d1d9', hi: '#e6edf3', dim: '#6e7681', mute: '#8b949e', acc: '#C5DAFF', ok: '#7ee787', blue: '#79c0ff' };
 const LANG = { Python: '#3572A5', TypeScript: '#3178c6', JavaScript: '#f1e05a', Java: '#b07219', 'Jupyter Notebook': '#DA5B0B', HTML: '#e34c26', CSS: '#663399', Shell: '#89e051', Dockerfile: '#384d54' };
 const FONT = `'JetBrains Mono', 'Fira Code', 'SFMono-Regular', Consolas, Menlo, monospace`;
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
