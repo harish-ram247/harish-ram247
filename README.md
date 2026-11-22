@@ -5,9 +5,9 @@
 <br/>
 
 <code><a href="https://portfolio-harishrams.vercel.app/">portfolio</a></code> &nbsp;
-<code><a href="https://linkedin.com/in/harish-ram-s">linkedin</a></code> &nbsp;
-<code><a href="https://leetcode.com">leetcode</a></code> &nbsp;
-<code><a href="https://hackerrank.com">hackerrank</a></code>
+<code><a href="https://www.linkedin.com/in/harish-ram-s-3b304a340">linkedin</a></code> &nbsp;
+<code><a href="https://leetcode.com/u/maverick_hr-07/">leetcode</a></code> &nbsp;
+<code><a href="https://www.codechef.com/users/harish_ram_07">codechef</a></code>
 
 </div>
 
